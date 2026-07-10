@@ -70,7 +70,8 @@ class EnigmaDoc:
                     self.entries[el.get("entnum")] = el
             elif tag == "texts":
                 for el in section:
-                    self.texts.setdefault(el.tag, {})[el.get("number")] = el.text
+                    key = el.get("number") if el.get("number") is not None else el.get("type")
+                    self.texts.setdefault(el.tag, {})[key] = el.text
             elif tag == "options":
                 for el in section:
                     self.options[el.tag] = el

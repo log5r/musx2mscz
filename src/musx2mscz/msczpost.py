@@ -182,6 +182,37 @@ def add_system_locks(mscz_path: Path, doc: EnigmaDoc) -> bool:
     return True
 
 
+def fix_title_frame_alignment(mscz_path: Path) -> bool:
+    """Anchor composer/poet texts in the title frame to the top.
+
+    The MusicXML importer gives them bottom-anchored styles, which inflates
+    the auto-sized frame to a large fraction of the page. Finale's page
+    texts near the top of page 1 should stay in the header area.
+    """
+    contents = _read_mscz(mscz_path)
+    mscx_name = next((n for n in contents if n.endswith(".mscx")), None)
+    if mscx_name is None:
+        return False
+    mscx = contents[mscx_name].decode("utf-8", errors="replace")
+    i = mscx.find("<VBox>")
+    j = mscx.find("</VBox>")
+    if i < 0 or j < 0:
+        return False
+    vbox = mscx[i:j]
+    new_vbox = vbox
+    for style, align in (("composer", "right,top"), ("poet", "left,top"),
+                         ("lyricist", "left,top")):
+        pattern = re.compile(
+            rf"(<Text>(?:(?!</Text>)(?!<align>).)*?<style>{style}</style>)((?:(?!</Text>)(?!<align>).)*?</Text>)",
+            re.S)
+        new_vbox = pattern.sub(rf"\1\n          <align>{align}</align>\2", new_vbox)
+    if new_vbox == vbox:
+        return False
+    contents[mscx_name] = (mscx[:i] + new_vbox + mscx[j:]).encode()
+    _write_mscz(mscz_path, contents)
+    return True
+
+
 _EMPTY_VBOX_RE = re.compile(
     r"<VBox>\s*<height>[^<]*</height>\s*(?:<eid>[^<]*</eid>\s*)?</VBox>\s*")
 
@@ -203,6 +234,7 @@ def strip_empty_frames(mscz_path: Path) -> bool:
 
 def postprocess(mscz_path: Path, musx: MusxFile, doc: EnigmaDoc, bind_sounds: bool = True) -> None:
     strip_empty_frames(mscz_path)
+    fix_title_frame_alignment(mscz_path)
     if add_system_locks(mscz_path, doc):
         print("  locked Finale system layout")
     if bind_sounds and uses_aria(musx):

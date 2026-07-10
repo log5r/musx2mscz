@@ -107,8 +107,12 @@ def resolve_font_name(doc, font_id: str | None) -> str | None:
     return doc.get(el, "name")
 
 
-def parse_enigma_text(text: str, initial: FontInfo | None = None) -> list[TextRun]:
-    """Split an Enigma-formatted string into styled runs, dropping non-font tags."""
+def parse_enigma_text(text: str, initial: FontInfo | None = None,
+                      resolver=None) -> list[TextRun]:
+    """Split an Enigma-formatted string into styled runs, dropping non-font tags.
+
+    `resolver` optionally maps a font ID (from ^fontid tags) to a font name.
+    """
     runs: list[TextRun] = []
     cur = initial or FontInfo()
     buf: list[str] = []
@@ -133,7 +137,9 @@ def parse_enigma_text(text: str, initial: FontInfo | None = None) -> list[TextRu
             cur = replace(cur, family=family, music=is_music_font(family) or tag == "fontMus")
         elif tag == "fontid":
             flush()
-            cur = replace(cur, family=None)  # resolved by caller if needed
+            family = resolver(arg.split(",")[0].strip()) if resolver else None
+            cur = replace(cur, family=family,
+                          music=is_music_font(family) if family else False)
         elif tag == "size":
             flush()
             try:

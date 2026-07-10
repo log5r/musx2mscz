@@ -1231,49 +1231,172 @@ class Converter:
 
     # --------------------------------------------------------------- metadata
 
+    _INSERT_TYPES = {
+        "title": "title", "subtitle": "subtitle", "composer": "composer",
+        "lyricist": "lyricist", "arranger": "arranger", "copyright": "copyright",
+    }
+    _CREDIT_TYPE = {
+        "title": "title", "subtitle": "subtitle", "composer": "composer",
+        "lyricist": "lyricist", "copyright": "rights",
+    }
+
+    def file_info(self, kind: str) -> str | None:
+        v = self.doc.text("fileInfo", kind)
+        if v is None and self.meta_root is not None:
+            ns = {"m": "http://www.makemusic.com/2012/NotationMetadata"}
+            el = self.meta_root.find(f"m:fileInfo/m:{kind}", ns)
+            v = el.text if el is not None else None
+        return v
+
+    def _substitute_inserts(self, raw: str) -> tuple[str, str | None]:
+        """Replace ^title() style inserts; returns (text, credit_kind)."""
+        kind = None
+
+        def repl(m):
+            nonlocal kind
+            name = m.group(1)
+            if name in self._INSERT_TYPES:
+                if kind is None:
+                    kind = name
+                value = self.file_info(self._INSERT_TYPES[name])
+                return (value or "").replace("^", "^^")
+            if name == "partname":
+                kind = kind or "partname"
+                return "Score"
+            return ""
+
+        out = re.sub(r"\^(title|subtitle|composer|lyricist|arranger|copyright|partname|page|filename|date|time|perftime)\((.*?)\)",
+                     repl, raw)
+        return out, kind
+
+    def _emit_defaults(self, score):
+        from .style import page_metrics, MM_PER_INCH
+        pm = page_metrics(self.doc)
+        self._page_metrics = pm
+        sp = pm["spatium_mm"]
+        self._tenths_per_mm = 10.0 / sp
+        d = SubElement(score, "defaults")
+        scaling = SubElement(d, "scaling")
+        SubElement(scaling, "millimeters").text = f"{sp * 4:.4f}"
+        SubElement(scaling, "tenths").text = "40"
+        pl = SubElement(d, "page-layout")
+        SubElement(pl, "page-height").text = f"{pm['h_in'] * MM_PER_INCH * self._tenths_per_mm:.1f}"
+        SubElement(pl, "page-width").text = f"{pm['w_in'] * MM_PER_INCH * self._tenths_per_mm:.1f}"
+        margins = SubElement(pl, "page-margins", type="both")
+        SubElement(margins, "left-margin").text = f"{pm['m_left'] * MM_PER_INCH * self._tenths_per_mm:.1f}"
+        SubElement(margins, "right-margin").text = f"{pm['m_right'] * MM_PER_INCH * self._tenths_per_mm:.1f}"
+        SubElement(margins, "top-margin").text = f"{pm['m_top'] * MM_PER_INCH * self._tenths_per_mm:.1f}"
+        SubElement(margins, "bottom-margin").text = f"{pm['m_bottom'] * MM_PER_INCH * self._tenths_per_mm:.1f}"
+
+    def _emit_page_texts(self, score) -> bool:
+        """Convert Finale page-attached text blocks on page 1 into credits."""
+        from .style import EVPU_TO_MM, MM_PER_INCH
+        doc = self.doc
+        pm = self._page_metrics
+        t = self._tenths_per_mm
+        page_w_mm = pm["w_in"] * MM_PER_INCH
+        page_h_mm = pm["h_in"] * MM_PER_INCH
+        pct = pm["page_percent"] / 100.0
+        emitted = False
+        for pta in doc.other_all("pageTextAssign"):
+            start = int(doc.get(pta, "startPage", "0") or 0)
+            if start != 1:
+                continue
+            block_id = doc.get(pta, "block")
+            tb = doc.other("textBlock", block_id) if block_id else None
+            raw = doc.text("blockText", doc.get(tb, "textID")) if tb is not None else None
+            if not raw:
+                continue
+            if "^page(" in raw:
+                continue  # page numbers handled via footer style
+            text_raw, kind = self._substitute_inserts(raw)
+            runs = parse_enigma_text(text_raw, resolver=self._font_by_id)
+            text = "".join(r.text for r in runs).strip()
+            if not text:
+                continue
+            hpos = doc.get(pta, "hposLp", "left")
+            vpos = doc.get(pta, "vpos", "top")
+            ydisp_mm = int(doc.get(pta, "ydisp", "0") or 0) * EVPU_TO_MM * pct
+            xdisp_mm = int(doc.get(pta, "xdisp", "0") or 0) * EVPU_TO_MM * pct
+            m_top_mm = pm["m_top"] * MM_PER_INCH
+            m_bottom_mm = pm["m_bottom"] * MM_PER_INCH
+            m_left_mm = pm["m_left"] * MM_PER_INCH
+            m_right_mm = pm["m_right"] * MM_PER_INCH
+            if vpos == "bottom":
+                y_mm = m_bottom_mm + ydisp_mm
+            else:
+                y_mm = page_h_mm - m_top_mm + ydisp_mm
+            if hpos == "center":
+                x_mm = page_w_mm / 2 + xdisp_mm
+            elif hpos == "right":
+                x_mm = page_w_mm - m_right_mm + xdisp_mm
+            else:
+                x_mm = m_left_mm + xdisp_mm
+
+            c = SubElement(score, "credit", page="1")
+            ctype = self._CREDIT_TYPE.get(kind or "")
+            if ctype:
+                SubElement(c, "credit-type").text = ctype
+            cw = SubElement(c, "credit-words")
+            cw.set("default-x", f"{x_mm * t:.1f}")
+            cw.set("default-y", f"{y_mm * t:.1f}")
+            cw.set("justify", {"center": "center", "right": "right"}.get(hpos, "left"))
+            cw.set("valign", "bottom" if vpos == "bottom" else "top")
+            font = runs[0].font if runs else None
+            if font and font.size:
+                cw.set("font-size", f"{font.size * pct:g}")
+            if font and font.family:
+                cw.set("font-family", font.family)
+            if font and font.bold:
+                cw.set("font-weight", "bold")
+            if font and font.italic:
+                cw.set("font-style", "italic")
+            cw.text = text
+            emitted = True
+        return emitted
+
+    def _font_by_id(self, font_id: str):
+        from .fonts import resolve_font_name
+        return resolve_font_name(self.doc, font_id)
+
     def _handle_metadata(self, score):
         identification = SubElement(score, "identification")
-        encoding = SubElement(identification, "encoding")
-        SubElement(encoding, "software").text = "musx2mscz " + __version__
-        SubElement(encoding, "encoding-date").text = date.today().strftime("%Y-%m-%d")
-        if self.meta_root is None:
-            return
-        ns = {"m": "http://www.makemusic.com/2012/NotationMetadata"}
-
-        def meta(path):
-            el = self.meta_root.find(path, ns)
-            return el.text if el is not None else None
-
-        title = meta("m:fileInfo/m:title")
-        subtitle = meta("m:fileInfo/m:subtitle")
-        composer = meta("m:fileInfo/m:composer")
+        title = self.file_info("title")
+        composer = self.file_info("composer")
+        rights = self.file_info("copyright")
         if composer:
             creator = SubElement(identification, "creator", type="composer")
             creator.text = composer
             identification.insert(0, creator)
-        work_title = title
-        if work_title:
+        if rights:
+            SubElement(identification, "rights").text = rights
+        encoding = SubElement(identification, "encoding")
+        SubElement(encoding, "software").text = "musx2mscz " + __version__
+        SubElement(encoding, "encoding-date").text = date.today().strftime("%Y-%m-%d")
+        if title:
             work = Element("work")
-            SubElement(work, "work-title").text = work_title
+            SubElement(work, "work-title").text = title
             score.insert(0, work)
 
-        def credit(ctype, text, x, y, justify, valign, size):
-            c = SubElement(score, "credit", page="1")
-            SubElement(c, "credit-type").text = ctype
-            cw = SubElement(c, "credit-words")
-            cw.set("default-x", str(x))
-            cw.set("default-y", str(y))
-            cw.set("justify", justify)
-            cw.set("valign", valign)
-            cw.set("font-size", str(size))
-            cw.text = text
+        self._emit_defaults(score)
+        if not self._emit_page_texts(score):
+            # fall back to plain credits from file info
+            def credit(ctype, text, justify, valign, size):
+                c = SubElement(score, "credit", page="1")
+                SubElement(c, "credit-type").text = ctype
+                cw = SubElement(c, "credit-words")
+                cw.set("justify", justify)
+                cw.set("valign", valign)
+                cw.set("font-size", str(size))
+                cw.text = text
 
-        if title:
-            credit("title", title, 616.9, 1511.0, "center", "top", 22)
-        if subtitle:
-            credit("subtitle", subtitle, 616.9, 1453.9, "center", "top", 14)
-        if composer:
-            credit("composer", composer, 1148.1, 1411.0, "right", "bottom", 10)
+            if title:
+                credit("title", title, "center", "top", 22)
+            subtitle = self.file_info("subtitle")
+            if subtitle:
+                credit("subtitle", subtitle, "center", "top", 14)
+            if composer:
+                credit("composer", composer, "right", "bottom", 10)
 
 
 def convert_enigma_to_musicxml(enigmaxml: bytes, metadata: bytes | None) -> tuple[bytes, list[str]]:
