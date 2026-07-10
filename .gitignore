@@ -5,3 +5,5 @@ out/
 *.enigmaxml
 *.musicxml
 .DS_Store
+.idea/
+samples/
