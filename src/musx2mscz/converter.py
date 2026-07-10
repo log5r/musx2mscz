@@ -56,6 +56,36 @@ def _dynamics_from_text(text: str, music: bool) -> str | None:
     return s if s in DYNAMIC_NAMES else None
 
 
+# Articulation specs by Finale charMain codepoint (Maestro-compatible layout).
+# artic: children of <articulations>; tremolo: slashes; others: notation flags.
+ARTIC_SPECS: dict[int, dict] = {
+    46: {"artic": [("staccato", None)]},
+    62: {"artic": [("accent", None)]},
+    94: {"artic": [("strong-accent", "up")]},
+    118: {"artic": [("strong-accent", "down")]},
+    45: {"artic": [("tenuto", None)]},
+    95: {"artic": [("tenuto", None)]},
+    248: {"artic": [("detached-legato", None)]},
+    224: {"artic": [("staccatissimo", None)]},
+    100: {"artic": [("staccatissimo", None)]},
+    171: {"artic": [("staccatissimo", None)]},
+    249: {"artic": [("accent", None), ("staccato", None)]},   # accent+staccato
+    223: {"artic": [("accent", None), ("staccato", None)]},
+    172: {"artic": [("strong-accent", "up"), ("staccato", None)]},
+    44: {"artic": [("breath-mark", None)]},
+    34: {"artic": [("caesura", None)]},
+    85: {"fermata": "upright"},
+    117: {"fermata": "inverted"},
+    33: {"tremolo": 1},
+    64: {"tremolo": 2},
+    190: {"tremolo": 3},
+    109: {"mordent": True},
+    103: {"arpeggiate": True},
+    161: {"pedal": "start"},
+    42: {"pedal": "stop"},
+}
+
+
 class StaffCtx:
     """Per-staff conversion context."""
 
@@ -1008,6 +1038,30 @@ class Converter:
             normal_type, _ = H.calculate_type_and_dots(int(tuplet_attrs[0]["symbolicDur"]))
             SubElement(tm, "normal-type").text = normal_type
 
+    @staticmethod
+    def _emit_articulations(note, notations, artic_specs):
+        art_el = None
+        orn_el = None
+        for spec in artic_specs:
+            for tag, typ in spec.get("artic", []):
+                if art_el is None:
+                    art_el = SubElement(notations, "articulations")
+                a = SubElement(art_el, tag)
+                if typ:
+                    a.set("type", typ)
+            if spec.get("tremolo"):
+                if orn_el is None:
+                    orn_el = SubElement(notations, "ornaments")
+                SubElement(orn_el, "tremolo", type="single").text = str(spec["tremolo"])
+            if spec.get("mordent"):
+                if orn_el is None:
+                    orn_el = SubElement(notations, "ornaments")
+                SubElement(orn_el, "inverted-mordent")
+            if spec.get("fermata"):
+                SubElement(notations, "fermata", type=spec["fermata"])
+            if spec.get("arpeggiate"):
+                SubElement(notations, "arpeggiate")
+
     NOTE_ORDER = ["grace", "chord", "pitch", "unpitched", "rest", "cue", "duration", "tie",
                   "instrument", "footnote", "level", "voice", "type", "dot", "accidental",
                   "time-modification", "stem", "notehead", "notehead-text", "staff", "beam",
@@ -1030,14 +1084,31 @@ class Converter:
                 if nid is not None:
                     note_alter_map[nid] = {"enharmonic": doc.has(na, "enharmonic")}
 
-        artic_details = []
+        artic_specs = []
         if doc.has(entry, "articDetail"):
             for aa in doc.details_ent.get("articAssign", {}).get(entnum, []):
                 ad_cmper = doc.get(aa, "articDef")
                 ad = doc.other("articDef", ad_cmper) if ad_cmper else None
-                if ad is not None:
-                    artic_details.append({"charMain": doc.get(ad, "charMain"),
-                                          "charAlt": doc.get(ad, "charAlt")})
+                if ad is None:
+                    continue
+                ch = doc.get(ad, "charMain")
+                spec = ARTIC_SPECS.get(int(ch)) if ch else None
+                if spec is None and ch is not None:
+                    tag, typ = H.translate_articualtion(ch)
+                    spec = {"artic": [(tag, typ)]}
+                if spec:
+                    artic_specs.append(spec)
+
+        # piano pedal markings are attached as articulations in Finale but are
+        # directions in MusicXML; emit them at the note's position.
+        for spec in artic_specs:
+            pedal = spec.get("pedal")
+            if pedal:
+                d = SubElement(measure, "direction", placement="below")
+                dt = SubElement(d, "direction-type")
+                SubElement(dt, "pedal", type=pedal, line="no", sign="yes")
+                if staff_id:
+                    SubElement(d, "staff").text = str(staff_id)
 
         if not is_note:
             note = SubElement(measure, "note")
@@ -1151,13 +1222,7 @@ class Converter:
                 if doc.has(entry, "tupletStart"):
                     self._handle_tuplet_start(entry, notations, tuplet_attrs)
                 self._close_tuplets(note, notations, dura, tuplet_attrs)
-                if artic_details:
-                    articulations = SubElement(notations, "articulations")
-                    for ad in artic_details:
-                        tag, typ = H.translate_articualtion(ad["charMain"])
-                        art = SubElement(articulations, tag)
-                        if typ:
-                            art.set("type", typ)
+                self._emit_articulations(note, notations, artic_specs)
                 if len(notations) == 0:
                     note.remove(notations)
 
