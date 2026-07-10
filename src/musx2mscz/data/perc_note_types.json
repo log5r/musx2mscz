@@ -1,0 +1,6462 @@
+{
+ "6": {
+  "id": 6,
+  "parent": 6,
+  "rawName": "Cowbell",
+  "staffPos": 5,
+  "gm": 56,
+  "group": 101,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "48": {
+  "id": 48,
+  "parent": 6,
+  "rawName": "Cowbell%g Mute",
+  "staffPos": 5,
+  "gm": -1,
+  "group": 101,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "49": {
+  "id": 49,
+  "parent": 6,
+  "rawName": "Cowbell%g Roll",
+  "staffPos": 5,
+  "gm": -1,
+  "group": 101,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "50": {
+  "id": 50,
+  "parent": 6,
+  "rawName": "Cowbell%g Tip",
+  "staffPos": 5,
+  "gm": -1,
+  "group": 101,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "51": {
+  "id": 51,
+  "parent": 6,
+  "rawName": "Large Cowbell%g",
+  "staffPos": 7,
+  "gm": -1,
+  "group": 101,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "52": {
+  "id": 52,
+  "parent": 48,
+  "rawName": "Large Cowbell%g Mute",
+  "staffPos": 7,
+  "gm": -1,
+  "group": 101,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "53": {
+  "id": 53,
+  "parent": 49,
+  "rawName": "Large Cowbell%g Roll",
+  "staffPos": 7,
+  "gm": -1,
+  "group": 101,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "54": {
+  "id": 54,
+  "parent": 50,
+  "rawName": "Large Cowbell%g Tip",
+  "staffPos": 7,
+  "gm": -1,
+  "group": 101,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "55": {
+  "id": 55,
+  "parent": 6,
+  "rawName": "Small Cowbell%g",
+  "staffPos": 5,
+  "gm": -1,
+  "group": 101,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "56": {
+  "id": 56,
+  "parent": 48,
+  "rawName": "Small Cowbell%g Mute",
+  "staffPos": 5,
+  "gm": -1,
+  "group": 101,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "57": {
+  "id": 57,
+  "parent": 49,
+  "rawName": "Small Cowbell%g Roll",
+  "staffPos": 5,
+  "gm": -1,
+  "group": 101,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "58": {
+  "id": 58,
+  "parent": 50,
+  "rawName": "Small Cowbell%g Tip",
+  "staffPos": 5,
+  "gm": -1,
+  "group": 101,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "59": {
+  "id": 59,
+  "parent": 43,
+  "rawName": "Shaker",
+  "staffPos": 0,
+  "gm": 82,
+  "group": 102,
+  "copies": 3,
+  "copyGroup": false
+ },
+ "62": {
+  "id": 62,
+  "parent": 59,
+  "rawName": "Shaker%g Roll",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 102,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "63": {
+  "id": 63,
+  "parent": 59,
+  "rawName": "Egg Shaker",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 102,
+  "copies": 2,
+  "copyGroup": false
+ },
+ "65": {
+  "id": 65,
+  "parent": 63,
+  "rawName": "Egg Shaker%g Multi Shake",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 102,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "522": {
+  "id": 522,
+  "parent": 522,
+  "rawName": "Flexatone Low",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 1018,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "523": {
+  "id": 523,
+  "parent": 522,
+  "rawName": "Flexatone Mid",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 1018,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "524": {
+  "id": 524,
+  "parent": 522,
+  "rawName": "Flexatone Hi",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 1018,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "7": {
+  "id": 7,
+  "parent": 7,
+  "rawName": "Tambourine",
+  "staffPos": 0,
+  "gm": 54,
+  "group": 103,
+  "copies": 2,
+  "copyGroup": false
+ },
+ "66": {
+  "id": 66,
+  "parent": 7,
+  "rawName": "Tambourine%g Shake",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 103,
+  "copies": 2,
+  "copyGroup": false
+ },
+ "67": {
+  "id": 67,
+  "parent": 7,
+  "rawName": "Tambourine%g Thumb Roll",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 103,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "8": {
+  "id": 8,
+  "parent": 8,
+  "rawName": "Triangle%g Mute",
+  "staffPos": 12,
+  "gm": 80,
+  "group": 104,
+  "copies": 2,
+  "copyGroup": false
+ },
+ "9": {
+  "id": 9,
+  "parent": 9,
+  "rawName": "Triangle%g Open",
+  "staffPos": 12,
+  "gm": 81,
+  "group": 104,
+  "copies": 2,
+  "copyGroup": false
+ },
+ "10": {
+  "id": 10,
+  "parent": 10,
+  "rawName": "High Woodblock",
+  "staffPos": 8,
+  "gm": 76,
+  "group": 105,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "11": {
+  "id": 11,
+  "parent": 10,
+  "rawName": "Low Woodblock",
+  "staffPos": 6,
+  "gm": 77,
+  "group": 105,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "68": {
+  "id": 68,
+  "parent": 10,
+  "rawName": "High Jam Block",
+  "staffPos": 8,
+  "gm": -1,
+  "group": 105,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "69": {
+  "id": 69,
+  "parent": 11,
+  "rawName": "Low Jam Block",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 105,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "70": {
+  "id": 70,
+  "parent": 7,
+  "rawName": "Bell Tree",
+  "staffPos": 0,
+  "gm": 84,
+  "group": 1,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "511": {
+  "id": 511,
+  "parent": 7,
+  "rawName": "Mark Tree",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 1,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "71": {
+  "id": 71,
+  "parent": 41,
+  "rawName": "Ratchet",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 1,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "72": {
+  "id": 72,
+  "parent": 43,
+  "rawName": "Rattle",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 1,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "73": {
+  "id": 73,
+  "parent": 251,
+  "rawName": "Slapstick",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 1,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "74": {
+  "id": 74,
+  "parent": 7,
+  "rawName": "Sleigh Bells",
+  "staffPos": 0,
+  "gm": 83,
+  "group": 1,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "75": {
+  "id": 75,
+  "parent": 30,
+  "rawName": "Spoons",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 1,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "12": {
+  "id": 12,
+  "parent": 12,
+  "rawName": "Vibra Slap",
+  "staffPos": 0,
+  "gm": 58,
+  "group": 1,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "76": {
+  "id": 76,
+  "parent": 73,
+  "rawName": "Whip",
+  "staffPos": 0,
+  "gm": 28,
+  "group": 1,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "460": {
+  "id": 460,
+  "parent": 7,
+  "rawName": "Wind Chimes",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 1,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "2": {
+  "id": 2,
+  "parent": 2,
+  "rawName": "Kick Drum",
+  "staffPos": 3,
+  "gm": 36,
+  "group": 2,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "13": {
+  "id": 13,
+  "parent": 2,
+  "rawName": "Bass Drum",
+  "staffPos": 2,
+  "gm": 35,
+  "group": 201,
+  "copies": 6,
+  "copyGroup": true
+ },
+ "77": {
+  "id": 77,
+  "parent": 13,
+  "rawName": "Bass Drum%g%d LH",
+  "staffPos": 2,
+  "gm": -1,
+  "group": 201,
+  "copies": 6,
+  "copyGroup": true
+ },
+ "78": {
+  "id": 78,
+  "parent": 3,
+  "rawName": "Bass Drum%g%d Rim",
+  "staffPos": 2,
+  "gm": -1,
+  "group": 201,
+  "copies": 6,
+  "copyGroup": true
+ },
+ "79": {
+  "id": 79,
+  "parent": 3,
+  "rawName": "Bass Drum%g%d Rim LH",
+  "staffPos": 2,
+  "gm": -1,
+  "group": 201,
+  "copies": 6,
+  "copyGroup": true
+ },
+ "80": {
+  "id": 80,
+  "parent": 13,
+  "rawName": "Bass Drum%g%d Roll",
+  "staffPos": 2,
+  "gm": -1,
+  "group": 201,
+  "copies": 6,
+  "copyGroup": true
+ },
+ "81": {
+  "id": 81,
+  "parent": 13,
+  "rawName": "Bass Drum%g%d Crush",
+  "staffPos": 2,
+  "gm": -1,
+  "group": 201,
+  "copies": 6,
+  "copyGroup": true
+ },
+ "82": {
+  "id": 82,
+  "parent": 13,
+  "rawName": "Bass Drum Unison%g%d Hits",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 220,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "83": {
+  "id": 83,
+  "parent": 77,
+  "rawName": "Bass Drum Unison%g%d Hits LH",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 220,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "84": {
+  "id": 84,
+  "parent": 78,
+  "rawName": "Bass Drum Unison%g%d Rims",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 220,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "85": {
+  "id": 85,
+  "parent": 79,
+  "rawName": "Bass Drum Unison%g%d Rims LH",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 220,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "86": {
+  "id": 86,
+  "parent": 80,
+  "rawName": "Bass Drum Unison%g%d Rolls",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 220,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "87": {
+  "id": 87,
+  "parent": 81,
+  "rawName": "Bass Drum Unison%g%d Crushes",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 220,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "4": {
+  "id": 4,
+  "parent": 4,
+  "rawName": "Crash Cymbal",
+  "staffPos": 12,
+  "gm": 49,
+  "group": 301,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "5": {
+  "id": 5,
+  "parent": 4,
+  "rawName": "Crash Cymbal 2 ",
+  "staffPos": 13,
+  "gm": 57,
+  "group": 301,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "88": {
+  "id": 88,
+  "parent": 4,
+  "rawName": "Suspended Cymbal%g Roll",
+  "staffPos": 12,
+  "gm": -1,
+  "group": 301,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "89": {
+  "id": 89,
+  "parent": 88,
+  "rawName": "Suspended Cymbal%g Roll%d (Mute Release)",
+  "staffPos": 12,
+  "gm": -1,
+  "group": 301,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "90": {
+  "id": 90,
+  "parent": 4,
+  "rawName": "Suspended Cymbal%g w/ Mallet%d (Crash)",
+  "staffPos": 12,
+  "gm": -1,
+  "group": 301,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "91": {
+  "id": 91,
+  "parent": 90,
+  "rawName": "Suspended Cymbal%g w/ Mallet%d (Loud)",
+  "staffPos": 12,
+  "gm": -1,
+  "group": 301,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "92": {
+  "id": 92,
+  "parent": 90,
+  "rawName": "Suspended Cymbal%g w/ Mallet%d (Soft)",
+  "staffPos": 12,
+  "gm": -1,
+  "group": 301,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "93": {
+  "id": 93,
+  "parent": 88,
+  "rawName": "Suspended Cymbal%g Cresc%d (Loud)",
+  "staffPos": 12,
+  "gm": -1,
+  "group": 301,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "94": {
+  "id": 94,
+  "parent": 88,
+  "rawName": "Suspended Cymbal%g Cresc%d (Soft)",
+  "staffPos": 12,
+  "gm": -1,
+  "group": 301,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "95": {
+  "id": 95,
+  "parent": 88,
+  "rawName": "Suspended Cymbal%g Cresc%d (Mute)",
+  "staffPos": 12,
+  "gm": -1,
+  "group": 301,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "96": {
+  "id": 96,
+  "parent": 93,
+  "rawName": "Suspended Cymbal%g Cresc Long%d (Loud)",
+  "staffPos": 12,
+  "gm": -1,
+  "group": 301,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "97": {
+  "id": 97,
+  "parent": 94,
+  "rawName": "Suspended Cymbal%g Cresc Long%d (Soft)",
+  "staffPos": 12,
+  "gm": -1,
+  "group": 301,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "98": {
+  "id": 98,
+  "parent": 95,
+  "rawName": "Suspended Cymbal%g Cresc Long%d (Mute)",
+  "staffPos": 12,
+  "gm": -1,
+  "group": 301,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "99": {
+  "id": 99,
+  "parent": 93,
+  "rawName": "Suspended Cymbal%g Cresc Short%d (Loud)",
+  "staffPos": 12,
+  "gm": -1,
+  "group": 301,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "100": {
+  "id": 100,
+  "parent": 94,
+  "rawName": "Suspended Cymbal%g Cresc Short%d (Soft)",
+  "staffPos": 12,
+  "gm": -1,
+  "group": 301,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "101": {
+  "id": 101,
+  "parent": 95,
+  "rawName": "Suspended Cymbal%g Cresc Short%d (Mute)",
+  "staffPos": 12,
+  "gm": -1,
+  "group": 301,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "102": {
+  "id": 102,
+  "parent": 4,
+  "rawName": "Suspended Cymbal%g Bell w/ Shoulder",
+  "staffPos": 12,
+  "gm": -1,
+  "group": 301,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "103": {
+  "id": 103,
+  "parent": 4,
+  "rawName": "Suspended Cymbal%g Coin Scrape Long",
+  "staffPos": 12,
+  "gm": -1,
+  "group": 301,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "104": {
+  "id": 104,
+  "parent": 103,
+  "rawName": "Suspended Cymbal%g Coin Scrape Short",
+  "staffPos": 12,
+  "gm": -1,
+  "group": 301,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "105": {
+  "id": 105,
+  "parent": 4,
+  "rawName": "Suspended Cymbal%g Fat Choke w/ Stick",
+  "staffPos": 12,
+  "gm": -1,
+  "group": 301,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "106": {
+  "id": 106,
+  "parent": 105,
+  "rawName": "Suspended Cymbal%g Fat Choke w/ Mallet",
+  "staffPos": 12,
+  "gm": -1,
+  "group": 301,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "107": {
+  "id": 107,
+  "parent": 105,
+  "rawName": "Suspended Cymbal%g Short Choke w/ Stick",
+  "staffPos": 12,
+  "gm": -1,
+  "group": 301,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "108": {
+  "id": 108,
+  "parent": 106,
+  "rawName": "Suspended Cymbal%g Short Choke w/ Mallet",
+  "staffPos": 12,
+  "gm": -1,
+  "group": 301,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "18": {
+  "id": 18,
+  "parent": 18,
+  "rawName": "Ride Cymbal",
+  "staffPos": 10,
+  "gm": 51,
+  "group": 302,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "19": {
+  "id": 19,
+  "parent": 18,
+  "rawName": "Ride Cymbal%g 2",
+  "staffPos": 8,
+  "gm": 59,
+  "group": 302,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "109": {
+  "id": 109,
+  "parent": 18,
+  "rawName": "Ride Cymbal%g Plastic Tip",
+  "staffPos": 10,
+  "gm": -1,
+  "group": 302,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "110": {
+  "id": 110,
+  "parent": 4,
+  "rawName": "Ride Cymbal%g Crash",
+  "staffPos": 10,
+  "gm": -1,
+  "group": 302,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "20": {
+  "id": 20,
+  "parent": 18,
+  "rawName": "Ride%g Bell",
+  "staffPos": 10,
+  "gm": 53,
+  "group": 302,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "111": {
+  "id": 111,
+  "parent": 18,
+  "rawName": "Ride%g Bell w/ Shoulder",
+  "staffPos": 10,
+  "gm": -1,
+  "group": 302,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "14": {
+  "id": 14,
+  "parent": 14,
+  "rawName": "Hi-Hat%g Open",
+  "staffPos": 11,
+  "gm": 46,
+  "group": 303,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "15": {
+  "id": 15,
+  "parent": 15,
+  "rawName": "Hi-Hat%g Closed",
+  "staffPos": 11,
+  "gm": 42,
+  "group": 303,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "16": {
+  "id": 16,
+  "parent": 15,
+  "rawName": "Hi-Hat%g Foot",
+  "staffPos": 11,
+  "gm": 44,
+  "group": 303,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "112": {
+  "id": 112,
+  "parent": 14,
+  "rawName": "Hi-Hat%g Foot Splash",
+  "staffPos": 11,
+  "gm": -1,
+  "group": 303,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "276": {
+  "id": 276,
+  "parent": 14,
+  "rawName": "Hi-Hat%g Half-Open",
+  "staffPos": 11,
+  "gm": -1,
+  "group": 303,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "113": {
+  "id": 113,
+  "parent": 14,
+  "rawName": "Hi-Hat%g Open w/ Shoulder",
+  "staffPos": 11,
+  "gm": -1,
+  "group": 303,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "114": {
+  "id": 114,
+  "parent": 15,
+  "rawName": "Hi-Hat%g Closed w/ Shoulder",
+  "staffPos": 11,
+  "gm": -1,
+  "group": 303,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "115": {
+  "id": 115,
+  "parent": 14,
+  "rawName": "Hi-Hat%g Bell Open",
+  "staffPos": 11,
+  "gm": -1,
+  "group": 303,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "116": {
+  "id": 116,
+  "parent": 15,
+  "rawName": "Hi-Hat%g Bell Closed",
+  "staffPos": 11,
+  "gm": -1,
+  "group": 303,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "117": {
+  "id": 117,
+  "parent": 15,
+  "rawName": "Hi-Hat%g Stand",
+  "staffPos": 11,
+  "gm": -1,
+  "group": 303,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "21": {
+  "id": 21,
+  "parent": 4,
+  "rawName": "Splash Cymbal",
+  "staffPos": 12,
+  "gm": 55,
+  "group": 304,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "118": {
+  "id": 118,
+  "parent": 90,
+  "rawName": "Splash Cymbal%g w/ Mallet",
+  "staffPos": 12,
+  "gm": -1,
+  "group": 304,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "119": {
+  "id": 119,
+  "parent": 105,
+  "rawName": "Splash Cymbal%g Choke",
+  "staffPos": 12,
+  "gm": -1,
+  "group": 304,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "120": {
+  "id": 120,
+  "parent": 106,
+  "rawName": "Splash Cymbal%g Choke w/ Mallet",
+  "staffPos": 12,
+  "gm": -1,
+  "group": 304,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "121": {
+  "id": 121,
+  "parent": 18,
+  "rawName": "Sizzle Cymbal",
+  "staffPos": 8,
+  "gm": -1,
+  "group": 310,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "122": {
+  "id": 122,
+  "parent": 18,
+  "rawName": "Sizzle Cymbal%g w/ Mallet",
+  "staffPos": 8,
+  "gm": -1,
+  "group": 310,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "123": {
+  "id": 123,
+  "parent": 88,
+  "rawName": "Sizzle Cymbal%g Sustained Roll Long",
+  "staffPos": 8,
+  "gm": -1,
+  "group": 310,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "124": {
+  "id": 124,
+  "parent": 88,
+  "rawName": "Sizzle Cymbal%g Sustained Roll Short",
+  "staffPos": 8,
+  "gm": -1,
+  "group": 310,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "125": {
+  "id": 125,
+  "parent": 18,
+  "rawName": "Sizzle Cymbal%g Fingers",
+  "staffPos": 8,
+  "gm": -1,
+  "group": 310,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "17": {
+  "id": 17,
+  "parent": 17,
+  "rawName": "China Cymbal",
+  "staffPos": 14,
+  "gm": 52,
+  "group": 305,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "126": {
+  "id": 126,
+  "parent": 17,
+  "rawName": "China Cymbal%g w/ Mallet",
+  "staffPos": 14,
+  "gm": -1,
+  "group": 305,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "127": {
+  "id": 127,
+  "parent": 93,
+  "rawName": "China Cymbal%g Cresc",
+  "staffPos": 14,
+  "gm": -1,
+  "group": 305,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "128": {
+  "id": 128,
+  "parent": 95,
+  "rawName": "China Cymbal%g Cresc%d (Mute)",
+  "staffPos": 14,
+  "gm": -1,
+  "group": 305,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "129": {
+  "id": 129,
+  "parent": 96,
+  "rawName": "China Cymbal%g Cresc Long",
+  "staffPos": 14,
+  "gm": -1,
+  "group": 305,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "130": {
+  "id": 130,
+  "parent": 98,
+  "rawName": "China Cymbal%g Cresc Long%d (Mute)",
+  "staffPos": 14,
+  "gm": -1,
+  "group": 305,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "131": {
+  "id": 131,
+  "parent": 99,
+  "rawName": "China Cymbal%g Cresc Short",
+  "staffPos": 14,
+  "gm": -1,
+  "group": 305,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "132": {
+  "id": 132,
+  "parent": 101,
+  "rawName": "China Cymbal%g Cresc Short%d (Mute)",
+  "staffPos": 14,
+  "gm": -1,
+  "group": 305,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "133": {
+  "id": 133,
+  "parent": 107,
+  "rawName": "China Cymbal%g Choke w/ Stick",
+  "staffPos": 14,
+  "gm": -1,
+  "group": 305,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "134": {
+  "id": 134,
+  "parent": 108,
+  "rawName": "China Cymbal%g Choke w/ Mallet",
+  "staffPos": 14,
+  "gm": -1,
+  "group": 305,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "135": {
+  "id": 135,
+  "parent": 136,
+  "rawName": "Large Gong",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 306,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "136": {
+  "id": 136,
+  "parent": 17,
+  "rawName": "Medium Gong",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 306,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "137": {
+  "id": 137,
+  "parent": 136,
+  "rawName": "Small Gong",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 306,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "138": {
+  "id": 138,
+  "parent": 136,
+  "rawName": "Gong%g Choke",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 306,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "139": {
+  "id": 139,
+  "parent": 127,
+  "rawName": "Gong%g Roll",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 306,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "140": {
+  "id": 140,
+  "parent": 128,
+  "rawName": "Gong%g Roll%d - Mute Release",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 306,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "141": {
+  "id": 141,
+  "parent": 127,
+  "rawName": "Gong%g Roll%d - Natural Release",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 306,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "142": {
+  "id": 142,
+  "parent": 136,
+  "rawName": "Gong%g Besar",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 306,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "143": {
+  "id": 143,
+  "parent": 136,
+  "rawName": "Java Gong",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 306,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "144": {
+  "id": 144,
+  "parent": 136,
+  "rawName": "Luo-Gong",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 306,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "145": {
+  "id": 145,
+  "parent": 136,
+  "rawName": "Mongolian Gong",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 306,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "146": {
+  "id": 146,
+  "parent": 136,
+  "rawName": "Thai Gong",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 306,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "147": {
+  "id": 147,
+  "parent": 136,
+  "rawName": "Water Gong",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 306,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "148": {
+  "id": 148,
+  "parent": 136,
+  "rawName": "Wind Gong",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 306,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "149": {
+  "id": 149,
+  "parent": 136,
+  "rawName": "Tam-Tam",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 307,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "150": {
+  "id": 150,
+  "parent": 18,
+  "rawName": "Tam-Tam%g w/ Triangle Beater",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 307,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "151": {
+  "id": 151,
+  "parent": 18,
+  "rawName": "Tam-Tam%g w/ Wood Stick",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 307,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "152": {
+  "id": 152,
+  "parent": 149,
+  "rawName": "Tam-Tam%g Dampened",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 307,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "153": {
+  "id": 153,
+  "parent": 103,
+  "rawName": "Tam-Tam%g Scrape Long",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 307,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "154": {
+  "id": 154,
+  "parent": 103,
+  "rawName": "Tam-Tam%g Scrape Medium",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 307,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "155": {
+  "id": 155,
+  "parent": 104,
+  "rawName": "Tam-Tam%g Scrape Short",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 307,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "156": {
+  "id": 156,
+  "parent": 129,
+  "rawName": "Tam-Tam%g Cresc Long%d (Loud)",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 307,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "157": {
+  "id": 157,
+  "parent": 131,
+  "rawName": "Tam-Tam%g Cresc Short%d (Loud)",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 307,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "158": {
+  "id": 158,
+  "parent": 130,
+  "rawName": "Tam-Tam%g Cresc Long%d (Soft)",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 307,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "159": {
+  "id": 159,
+  "parent": 132,
+  "rawName": "Tam-Tam%g Cresc Short%d (Soft)",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 307,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "160": {
+  "id": 160,
+  "parent": 149,
+  "rawName": "Wuhan Tam-Tam",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 307,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "161": {
+  "id": 161,
+  "parent": 149,
+  "rawName": "Bell Plate",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 307,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "162": {
+  "id": 162,
+  "parent": 149,
+  "rawName": "Earth Plate",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 307,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "163": {
+  "id": 163,
+  "parent": 149,
+  "rawName": "Earth Plate Scrape",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 307,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "164": {
+  "id": 164,
+  "parent": 4,
+  "rawName": "Crash Cymbals%g Crash",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 308,
+  "copies": 2,
+  "copyGroup": false
+ },
+ "165": {
+  "id": 165,
+  "parent": 88,
+  "rawName": "Crash Cymbals%g Circular Roll",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 308,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "166": {
+  "id": 166,
+  "parent": 164,
+  "rawName": "Crash Cymbals%g Click",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 308,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "167": {
+  "id": 167,
+  "parent": 106,
+  "rawName": "Crash Cymbals%g Choke Fat",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 308,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "168": {
+  "id": 168,
+  "parent": 106,
+  "rawName": "Crash Cymbals%g Choke Secco",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 308,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "169": {
+  "id": 169,
+  "parent": 106,
+  "rawName": "Crash Cymbals%g Crunch Choke",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 308,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "170": {
+  "id": 170,
+  "parent": 164,
+  "rawName": "Crash Cymbals%g Ding",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 308,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "171": {
+  "id": 171,
+  "parent": 164,
+  "rawName": "Crash Cymbals%g Fast Zing",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 308,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "172": {
+  "id": 172,
+  "parent": 164,
+  "rawName": "Crash Cymbals%g Flat Crash",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 308,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "173": {
+  "id": 173,
+  "parent": 88,
+  "rawName": "Crash Cymbals%g Flat Roll",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 308,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "174": {
+  "id": 174,
+  "parent": 164,
+  "rawName": "Crash Cymbals%g Port Crash",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 308,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "175": {
+  "id": 175,
+  "parent": 164,
+  "rawName": "Crash Cymbals%g Scratch In",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 308,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "176": {
+  "id": 176,
+  "parent": 164,
+  "rawName": "Crash Cymbals%g Scratch Out",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 308,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "177": {
+  "id": 177,
+  "parent": 164,
+  "rawName": "Crash Cymbals%g Sizz/Suck",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 308,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "178": {
+  "id": 178,
+  "parent": 164,
+  "rawName": "Crash Cymbals%g Slow Zing",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 308,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "179": {
+  "id": 179,
+  "parent": 106,
+  "rawName": "Crash Cymbals%g Tap Choke",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 308,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "180": {
+  "id": 180,
+  "parent": 164,
+  "rawName": "Crash Cymbals%g Tap Halfway",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 308,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "181": {
+  "id": 181,
+  "parent": 88,
+  "rawName": "Crash Cymbals%g Tremolo",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 308,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "182": {
+  "id": 182,
+  "parent": 164,
+  "rawName": "Crash Cymbals%g Vacuum",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 308,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "183": {
+  "id": 183,
+  "parent": 164,
+  "rawName": "Crash Cymbals%g Whale Call",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 308,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "184": {
+  "id": 184,
+  "parent": 164,
+  "rawName": "Cymbal Section%g Crash",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 309,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "185": {
+  "id": 185,
+  "parent": 165,
+  "rawName": "Cymbal Section%g Circular Roll",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 309,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "186": {
+  "id": 186,
+  "parent": 166,
+  "rawName": "Cymbal Section%g Click",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 309,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "187": {
+  "id": 187,
+  "parent": 167,
+  "rawName": "Cymbal Section%g Crash Choke Fat",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 309,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "188": {
+  "id": 188,
+  "parent": 168,
+  "rawName": "Cymbal Section%g Crash Choke Secco",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 309,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "189": {
+  "id": 189,
+  "parent": 169,
+  "rawName": "Cymbal Section%g Crunch Choke",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 309,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "190": {
+  "id": 190,
+  "parent": 170,
+  "rawName": "Cymbal Section%g Ding",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 309,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "191": {
+  "id": 191,
+  "parent": 171,
+  "rawName": "Cymbal Section%g Fast Zing",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 309,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "192": {
+  "id": 192,
+  "parent": 172,
+  "rawName": "Cymbal Section%g Flat Crash",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 309,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "193": {
+  "id": 193,
+  "parent": 173,
+  "rawName": "Cymbal Section%g Flat Roll",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 309,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "194": {
+  "id": 194,
+  "parent": 15,
+  "rawName": "Cymbal Section%g Hi-Hat Choke",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 309,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "195": {
+  "id": 195,
+  "parent": 174,
+  "rawName": "Cymbal Section%g Port Crash",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 309,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "196": {
+  "id": 196,
+  "parent": 175,
+  "rawName": "Cymbal Section%g Scratch In",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 309,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "197": {
+  "id": 197,
+  "parent": 176,
+  "rawName": "Cymbal Section%g Scratch Out",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 309,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "198": {
+  "id": 198,
+  "parent": 177,
+  "rawName": "Cymbal Section%g Sizz/Suck",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 309,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "199": {
+  "id": 199,
+  "parent": 121,
+  "rawName": "Cymbal Section%g Sizzle",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 309,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "200": {
+  "id": 200,
+  "parent": 178,
+  "rawName": "Cymbal Section%g Slow Zing",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 309,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "201": {
+  "id": 201,
+  "parent": 179,
+  "rawName": "Cymbal Section%g Tap Choke",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 309,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "202": {
+  "id": 202,
+  "parent": 180,
+  "rawName": "Cymbal Section%g Tap Halfway",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 309,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "203": {
+  "id": 203,
+  "parent": 181,
+  "rawName": "Cymbal Section%g Tremolo",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 309,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "204": {
+  "id": 204,
+  "parent": 182,
+  "rawName": "Cymbal Section%g Vacuum",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 309,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "205": {
+  "id": 205,
+  "parent": 183,
+  "rawName": "Cymbal Section%g Whale Call",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 309,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "206": {
+  "id": 206,
+  "parent": 18,
+  "rawName": "Finger Cymbals",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 311,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "207": {
+  "id": 207,
+  "parent": 206,
+  "rawName": "Finger Cymbals%g Scrape",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 311,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "208": {
+  "id": 208,
+  "parent": 206,
+  "rawName": "Finger Cymbals%g Muted Clap",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 311,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "209": {
+  "id": 209,
+  "parent": 206,
+  "rawName": "Finger Cymbals%g Edge Against Bell",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 311,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "210": {
+  "id": 210,
+  "parent": 206,
+  "rawName": "Finger Cymbals%g Clasped",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 311,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "211": {
+  "id": 211,
+  "parent": 137,
+  "rawName": "Kenong",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 401,
+  "copies": 15,
+  "copyGroup": false
+ },
+ "212": {
+  "id": 212,
+  "parent": 24,
+  "rawName": "Kendhang Ageng",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 402,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "213": {
+  "id": 213,
+  "parent": 25,
+  "rawName": "Kendhang Ciblon",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 402,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "214": {
+  "id": 214,
+  "parent": 26,
+  "rawName": "Kendhang Batangan",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 402,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "215": {
+  "id": 215,
+  "parent": 27,
+  "rawName": "Kendhang Ketipung",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 402,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "456": {
+  "id": 456,
+  "parent": 30,
+  "rawName": "Kempyang",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 4,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "457": {
+  "id": 457,
+  "parent": 31,
+  "rawName": "Ketuk",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 4,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "216": {
+  "id": 216,
+  "parent": 18,
+  "rawName": "Anvil",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 5,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "217": {
+  "id": 217,
+  "parent": 217,
+  "rawName": "Bicycle Bell",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 5,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "218": {
+  "id": 218,
+  "parent": 2,
+  "rawName": "Brake Drum",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 5,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "219": {
+  "id": 219,
+  "parent": 13,
+  "rawName": "Cannon",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 5,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "220": {
+  "id": 220,
+  "parent": 4,
+  "rawName": "Garbage Can Lid",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 5,
+  "copies": 2,
+  "copyGroup": false
+ },
+ "221": {
+  "id": 221,
+  "parent": 221,
+  "rawName": "Horn",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 5,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "222": {
+  "id": 222,
+  "parent": 59,
+  "rawName": "Jar of Nails",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 5,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "223": {
+  "id": 223,
+  "parent": 27,
+  "rawName": "Plastic Bucket",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 5,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "224": {
+  "id": 224,
+  "parent": 46,
+  "rawName": "Police Whistle%g ><",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 501,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "225": {
+  "id": 225,
+  "parent": 47,
+  "rawName": "Police Whistle%g Short",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 501,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "226": {
+  "id": 226,
+  "parent": 46,
+  "rawName": "Police Whistle%g Sustained",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 501,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "455": {
+  "id": 455,
+  "parent": 59,
+  "rawName": "Sand Block",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 5,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "227": {
+  "id": 227,
+  "parent": 88,
+  "rawName": "Saw Blade",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 5,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "464": {
+  "id": 464,
+  "parent": 463,
+  "rawName": "Scratch Pull",
+  "staffPos": 0,
+  "gm": 30,
+  "group": 5,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "463": {
+  "id": 463,
+  "parent": 59,
+  "rawName": "Scratch Push",
+  "staffPos": 0,
+  "gm": 29,
+  "group": 5,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "228": {
+  "id": 228,
+  "parent": 221,
+  "rawName": "Siren",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 5,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "229": {
+  "id": 229,
+  "parent": 96,
+  "rawName": "Thunder Machine",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 5,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "230": {
+  "id": 230,
+  "parent": 3,
+  "rawName": "Typewriter",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 5,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "231": {
+  "id": 231,
+  "parent": 88,
+  "rawName": "Wind Machine Fast",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 1019,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "516": {
+  "id": 516,
+  "parent": 231,
+  "rawName": "Wind Machine Slow",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 1019,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "517": {
+  "id": 517,
+  "parent": 231,
+  "rawName": "Wind Machine Variable",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 1019,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "22": {
+  "id": 22,
+  "parent": 22,
+  "rawName": "Hand Clap",
+  "staffPos": 0,
+  "gm": 39,
+  "group": 6,
+  "copies": 2,
+  "copyGroup": false
+ },
+ "234": {
+  "id": 234,
+  "parent": 22,
+  "rawName": "Finger Snaps",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 6,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "461": {
+  "id": 461,
+  "parent": 461,
+  "rawName": "Metronome Click",
+  "staffPos": 0,
+  "gm": 32,
+  "group": 6,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "462": {
+  "id": 462,
+  "parent": 461,
+  "rawName": "Metronome Bell",
+  "staffPos": 0,
+  "gm": 34,
+  "group": 6,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "235": {
+  "id": 235,
+  "parent": 235,
+  "rawName": "Rhythm Cues",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 6,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "1": {
+  "id": 1,
+  "parent": 1,
+  "rawName": "Snare Drum",
+  "staffPos": 7,
+  "gm": 38,
+  "group": 701,
+  "copies": 2,
+  "copyGroup": false
+ },
+ "236": {
+  "id": 236,
+  "parent": 1,
+  "rawName": "Snare Drum%g%d LH",
+  "staffPos": 7,
+  "gm": -1,
+  "group": 701,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "277": {
+  "id": 277,
+  "parent": 1,
+  "rawName": "Snare%g Roll",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 701,
+  "copies": 2,
+  "copyGroup": false
+ },
+ "512": {
+  "id": 512,
+  "parent": 1,
+  "rawName": "Snare Drum (Snares off)",
+  "staffPos": 7,
+  "gm": -1,
+  "group": 701,
+  "copies": 2,
+  "copyGroup": false
+ },
+ "513": {
+  "id": 513,
+  "parent": 1,
+  "rawName": "Snare Drum%g%d LH (Snares off)",
+  "staffPos": 7,
+  "gm": -1,
+  "group": 701,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "514": {
+  "id": 514,
+  "parent": 1,
+  "rawName": "Snare%g Roll (Snares off)",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 701,
+  "copies": 2,
+  "copyGroup": false
+ },
+ "239": {
+  "id": 239,
+  "parent": 277,
+  "rawName": "Snare%g Buzz Roll",
+  "staffPos": 7,
+  "gm": -1,
+  "group": 701,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "278": {
+  "id": 278,
+  "parent": 277,
+  "rawName": "Snare%g Sustained Roll",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 701,
+  "copies": 2,
+  "copyGroup": false
+ },
+ "240": {
+  "id": 240,
+  "parent": 1,
+  "rawName": "Snare%g Cross Shot",
+  "staffPos": 7,
+  "gm": -1,
+  "group": 701,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "3": {
+  "id": 3,
+  "parent": 1,
+  "rawName": "Snare%g Cross Stick",
+  "staffPos": 7,
+  "gm": 37,
+  "group": 701,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "243": {
+  "id": 243,
+  "parent": 1,
+  "rawName": "Snare%g Dry Crush",
+  "staffPos": 7,
+  "gm": -1,
+  "group": 701,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "244": {
+  "id": 244,
+  "parent": 1,
+  "rawName": "Snare%g Fat Crush",
+  "staffPos": 7,
+  "gm": -1,
+  "group": 701,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "245": {
+  "id": 245,
+  "parent": 1,
+  "rawName": "Snare%g Flam",
+  "staffPos": 7,
+  "gm": -1,
+  "group": 701,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "246": {
+  "id": 246,
+  "parent": 3,
+  "rawName": "Snare%g Ghost Stroke",
+  "staffPos": 7,
+  "gm": -1,
+  "group": 701,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "247": {
+  "id": 247,
+  "parent": 259,
+  "rawName": "Snare%g Crush Roll Long",
+  "staffPos": 7,
+  "gm": -1,
+  "group": 701,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "248": {
+  "id": 248,
+  "parent": 1,
+  "rawName": "Snare%g Crush Roll Short",
+  "staffPos": 7,
+  "gm": -1,
+  "group": 701,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "249": {
+  "id": 249,
+  "parent": 3,
+  "rawName": "Snare%g Rim",
+  "staffPos": 7,
+  "gm": -1,
+  "group": 701,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "250": {
+  "id": 250,
+  "parent": 3,
+  "rawName": "Snare%g Rim%d LH",
+  "staffPos": 7,
+  "gm": -1,
+  "group": 701,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "251": {
+  "id": 251,
+  "parent": 1,
+  "rawName": "Snare%g Rim Shot",
+  "staffPos": 7,
+  "gm": -1,
+  "group": 701,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "252": {
+  "id": 252,
+  "parent": 1,
+  "rawName": "Snare%g Rim Shot%d LH",
+  "staffPos": 7,
+  "gm": -1,
+  "group": 701,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "253": {
+  "id": 253,
+  "parent": 1,
+  "rawName": "Snare%g Rim Shot%d (Both Hands)",
+  "staffPos": 7,
+  "gm": -1,
+  "group": 701,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "237": {
+  "id": 237,
+  "parent": 1,
+  "rawName": "Snare Drum%g Brush",
+  "staffPos": 7,
+  "gm": 93,
+  "group": 701,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "238": {
+  "id": 238,
+  "parent": 1,
+  "rawName": "Snare Drum%g Brush Stir",
+  "staffPos": 7,
+  "gm": -1,
+  "group": 701,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "241": {
+  "id": 241,
+  "parent": 1,
+  "rawName": "Snare Drum%g Dread",
+  "staffPos": 7,
+  "gm": -1,
+  "group": 701,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "242": {
+  "id": 242,
+  "parent": 1,
+  "rawName": "Snare Drum%g Dread%d LH",
+  "staffPos": 7,
+  "gm": -1,
+  "group": 701,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "254": {
+  "id": 254,
+  "parent": 1,
+  "rawName": "Snare Drum%g Rod",
+  "staffPos": 7,
+  "gm": 91,
+  "group": 701,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "255": {
+  "id": 255,
+  "parent": 1,
+  "rawName": "Snare Drum%g Rod%d LH",
+  "staffPos": 7,
+  "gm": -1,
+  "group": 701,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "256": {
+  "id": 256,
+  "parent": 3,
+  "rawName": "Stick Click",
+  "staffPos": 7,
+  "gm": 31,
+  "group": 701,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "23": {
+  "id": 23,
+  "parent": 1,
+  "rawName": "Electric Snare Drum",
+  "staffPos": 7,
+  "gm": 40,
+  "group": 701,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "257": {
+  "id": 257,
+  "parent": 1,
+  "rawName": "Snare Section%g%d Hits",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 702,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "258": {
+  "id": 258,
+  "parent": 1,
+  "rawName": "Snare Section%g%d Hits LH",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 702,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "259": {
+  "id": 259,
+  "parent": 277,
+  "rawName": "Snare Section%g Buzz Rolls",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 702,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "458": {
+  "id": 458,
+  "parent": 277,
+  "rawName": "Snare Section%g Sustained Rolls",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 702,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "260": {
+  "id": 260,
+  "parent": 240,
+  "rawName": "Snare Section%g Cross Shots",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 702,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "261": {
+  "id": 261,
+  "parent": 3,
+  "rawName": "Snare Section%g Cross Sticks",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 702,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "264": {
+  "id": 264,
+  "parent": 243,
+  "rawName": "Snare Section%g Dry Crushes",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 702,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "265": {
+  "id": 265,
+  "parent": 244,
+  "rawName": "Snare Section%g Fat Crushes",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 702,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "266": {
+  "id": 266,
+  "parent": 247,
+  "rawName": "Snare Section%g Crush Roll Long",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 702,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "267": {
+  "id": 267,
+  "parent": 248,
+  "rawName": "Snare Section%g Crush Roll Short",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 702,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "268": {
+  "id": 268,
+  "parent": 249,
+  "rawName": "Snare Section%g Rim Shots",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 702,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "269": {
+  "id": 269,
+  "parent": 250,
+  "rawName": "Snare Section%g Rim Shots%d LH",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 702,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "270": {
+  "id": 270,
+  "parent": 268,
+  "rawName": "Snare Section%g Rim Shots%d (Both Hands)",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 702,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "271": {
+  "id": 271,
+  "parent": 252,
+  "rawName": "Snare Section%g Rims",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 702,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "272": {
+  "id": 272,
+  "parent": 253,
+  "rawName": "Snare Section%g Rims%d LH",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 702,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "262": {
+  "id": 262,
+  "parent": 241,
+  "rawName": "Snare Section%g Dreads",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 702,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "263": {
+  "id": 263,
+  "parent": 242,
+  "rawName": "Snare Section%g Dreads%d LH",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 702,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "273": {
+  "id": 273,
+  "parent": 254,
+  "rawName": "Snare Section%g Rods",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 702,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "274": {
+  "id": 274,
+  "parent": 255,
+  "rawName": "Snare Section%g Rods%d LH",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 702,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "275": {
+  "id": 275,
+  "parent": 256,
+  "rawName": "Stick Clicks",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 702,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "279": {
+  "id": 279,
+  "parent": 1,
+  "rawName": "Side Drum",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 704,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "280": {
+  "id": 280,
+  "parent": 236,
+  "rawName": "Side Drum%g%d LH",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 704,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "281": {
+  "id": 281,
+  "parent": 1,
+  "rawName": "Side Drum%g Roll",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 704,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "282": {
+  "id": 282,
+  "parent": 1,
+  "rawName": "Pipe Snare Drum",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 7,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "24": {
+  "id": 24,
+  "parent": 24,
+  "rawName": "High Tom",
+  "staffPos": 10,
+  "gm": 50,
+  "group": 801,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "283": {
+  "id": 283,
+  "parent": 24,
+  "rawName": "High Tom%g%d LH",
+  "staffPos": 10,
+  "gm": -1,
+  "group": 801,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "284": {
+  "id": 284,
+  "parent": 289,
+  "rawName": "High Tom%g Buzz Roll",
+  "staffPos": 10,
+  "gm": -1,
+  "group": 801,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "285": {
+  "id": 285,
+  "parent": 24,
+  "rawName": "High Tom%g Dry Crush",
+  "staffPos": 10,
+  "gm": -1,
+  "group": 801,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "286": {
+  "id": 286,
+  "parent": 24,
+  "rawName": "High Tom%g Flam",
+  "staffPos": 10,
+  "gm": -1,
+  "group": 801,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "287": {
+  "id": 287,
+  "parent": 24,
+  "rawName": "High Tom%g Shot/Rim",
+  "staffPos": 10,
+  "gm": -1,
+  "group": 801,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "288": {
+  "id": 288,
+  "parent": 24,
+  "rawName": "High Tom%g Shot/Rim%d LH",
+  "staffPos": 10,
+  "gm": -1,
+  "group": 801,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "289": {
+  "id": 289,
+  "parent": 24,
+  "rawName": "High Tom%g Short Roll",
+  "staffPos": 10,
+  "gm": -1,
+  "group": 801,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "290": {
+  "id": 290,
+  "parent": 284,
+  "rawName": "High Tom%g Sustained Buzz Roll",
+  "staffPos": 10,
+  "gm": -1,
+  "group": 801,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "25": {
+  "id": 25,
+  "parent": 25,
+  "rawName": "High-Mid Tom",
+  "staffPos": 9,
+  "gm": 48,
+  "group": 806,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "291": {
+  "id": 291,
+  "parent": 25,
+  "rawName": "High-Mid Tom%g%d LH",
+  "staffPos": 9,
+  "gm": -1,
+  "group": 806,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "292": {
+  "id": 292,
+  "parent": 297,
+  "rawName": "High-Mid Tom%g Buzz Roll",
+  "staffPos": 9,
+  "gm": -1,
+  "group": 806,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "293": {
+  "id": 293,
+  "parent": 25,
+  "rawName": "High-Mid Tom%g Dry Crush",
+  "staffPos": 9,
+  "gm": -1,
+  "group": 806,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "294": {
+  "id": 294,
+  "parent": 25,
+  "rawName": "High-Mid Tom%g Flam",
+  "staffPos": 9,
+  "gm": -1,
+  "group": 806,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "295": {
+  "id": 295,
+  "parent": 25,
+  "rawName": "High-Mid Tom%g Shot/Rim",
+  "staffPos": 9,
+  "gm": -1,
+  "group": 806,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "296": {
+  "id": 296,
+  "parent": 25,
+  "rawName": "High-Mid Tom%g Shot/Rim%d LH",
+  "staffPos": 9,
+  "gm": -1,
+  "group": 806,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "297": {
+  "id": 297,
+  "parent": 25,
+  "rawName": "High-Mid Tom%g Short Roll",
+  "staffPos": 9,
+  "gm": -1,
+  "group": 806,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "298": {
+  "id": 298,
+  "parent": 292,
+  "rawName": "High-Mid Tom%g Sustained Buzz Roll",
+  "staffPos": 9,
+  "gm": -1,
+  "group": 806,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "26": {
+  "id": 26,
+  "parent": 26,
+  "rawName": "Low-Mid Tom",
+  "staffPos": 8,
+  "gm": 47,
+  "group": 807,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "299": {
+  "id": 299,
+  "parent": 26,
+  "rawName": "Low-Mid Tom%g%d LH",
+  "staffPos": 8,
+  "gm": -1,
+  "group": 807,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "300": {
+  "id": 300,
+  "parent": 305,
+  "rawName": "Low-Mid Tom%g Buzz Roll",
+  "staffPos": 8,
+  "gm": -1,
+  "group": 807,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "301": {
+  "id": 301,
+  "parent": 26,
+  "rawName": "Low-Mid Tom%g Dry Crush",
+  "staffPos": 8,
+  "gm": -1,
+  "group": 807,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "302": {
+  "id": 302,
+  "parent": 26,
+  "rawName": "Low-Mid Tom%g Flam",
+  "staffPos": 8,
+  "gm": -1,
+  "group": 807,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "303": {
+  "id": 303,
+  "parent": 26,
+  "rawName": "Low-Mid Tom%g Shot/Rim",
+  "staffPos": 8,
+  "gm": -1,
+  "group": 807,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "304": {
+  "id": 304,
+  "parent": 26,
+  "rawName": "Low-Mid Tom%g Shot/Rim%d LH",
+  "staffPos": 8,
+  "gm": -1,
+  "group": 807,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "305": {
+  "id": 305,
+  "parent": 26,
+  "rawName": "Low-Mid Tom%g Short Roll",
+  "staffPos": 8,
+  "gm": -1,
+  "group": 807,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "306": {
+  "id": 306,
+  "parent": 300,
+  "rawName": "Low-Mid Tom%g Sustained Buzz Roll",
+  "staffPos": 8,
+  "gm": -1,
+  "group": 807,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "27": {
+  "id": 27,
+  "parent": 27,
+  "rawName": "Low Tom",
+  "staffPos": 6,
+  "gm": 45,
+  "group": 808,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "307": {
+  "id": 307,
+  "parent": 27,
+  "rawName": "Low Tom%g%d LH",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 808,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "308": {
+  "id": 308,
+  "parent": 313,
+  "rawName": "Low Tom%g Buzz Roll",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 808,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "309": {
+  "id": 309,
+  "parent": 27,
+  "rawName": "Low Tom%g Dry Crush",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 808,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "310": {
+  "id": 310,
+  "parent": 27,
+  "rawName": "Low Tom%g Flam",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 808,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "311": {
+  "id": 311,
+  "parent": 27,
+  "rawName": "Low Tom%g Shot/Rim",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 808,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "312": {
+  "id": 312,
+  "parent": 27,
+  "rawName": "Low Tom%g Shot/Rim%d LH",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 808,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "313": {
+  "id": 313,
+  "parent": 27,
+  "rawName": "Low Tom%g Short Roll",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 808,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "314": {
+  "id": 314,
+  "parent": 308,
+  "rawName": "Low Tom%g Sustained Buzz Roll",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 808,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "28": {
+  "id": 28,
+  "parent": 28,
+  "rawName": "Floor Tom 1",
+  "staffPos": 5,
+  "gm": 43,
+  "group": 8,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "29": {
+  "id": 29,
+  "parent": 29,
+  "rawName": "Floor Tom 2",
+  "staffPos": 4,
+  "gm": 41,
+  "group": 8,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "315": {
+  "id": 315,
+  "parent": 315,
+  "rawName": "Tenors%g High Rims",
+  "staffPos": 7,
+  "gm": -1,
+  "group": 802,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "316": {
+  "id": 316,
+  "parent": 316,
+  "rawName": "Tenors%g Low Rims",
+  "staffPos": 5,
+  "gm": -1,
+  "group": 802,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "317": {
+  "id": 317,
+  "parent": 275,
+  "rawName": "Tenors%g Stick Click",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 802,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "318": {
+  "id": 318,
+  "parent": 26,
+  "rawName": "Impact Drum%g High",
+  "staffPos": 7,
+  "gm": -1,
+  "group": 803,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "319": {
+  "id": 319,
+  "parent": 27,
+  "rawName": "Impact Drum%g Low",
+  "staffPos": 5,
+  "gm": -1,
+  "group": 803,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "320": {
+  "id": 320,
+  "parent": 24,
+  "rawName": "RotoTom%g High",
+  "staffPos": 7,
+  "gm": -1,
+  "group": 804,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "321": {
+  "id": 321,
+  "parent": 25,
+  "rawName": "RotoTom%g Mid",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 804,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "322": {
+  "id": 322,
+  "parent": 26,
+  "rawName": "RotoTom%g Low",
+  "staffPos": 5,
+  "gm": -1,
+  "group": 804,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "323": {
+  "id": 323,
+  "parent": 25,
+  "rawName": "Spock Drum%g%d",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 805,
+  "copies": 2,
+  "copyGroup": true
+ },
+ "324": {
+  "id": 324,
+  "parent": 25,
+  "rawName": "Spock Drum%g%d LH",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 805,
+  "copies": 2,
+  "copyGroup": true
+ },
+ "325": {
+  "id": 325,
+  "parent": 330,
+  "rawName": "Spock Drum%g Buzz Roll",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 805,
+  "copies": 2,
+  "copyGroup": true
+ },
+ "326": {
+  "id": 326,
+  "parent": 25,
+  "rawName": "Spock Drum%g Dry Crush",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 805,
+  "copies": 2,
+  "copyGroup": true
+ },
+ "327": {
+  "id": 327,
+  "parent": 25,
+  "rawName": "Spock Drum%g Flam",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 805,
+  "copies": 2,
+  "copyGroup": true
+ },
+ "328": {
+  "id": 328,
+  "parent": 25,
+  "rawName": "Spock Drum%g Rim Shot",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 805,
+  "copies": 2,
+  "copyGroup": true
+ },
+ "329": {
+  "id": 329,
+  "parent": 25,
+  "rawName": "Spock Drum%g Rim Shot%d LH",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 805,
+  "copies": 2,
+  "copyGroup": true
+ },
+ "330": {
+  "id": 330,
+  "parent": 289,
+  "rawName": "Spock Drum%g Short Roll",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 805,
+  "copies": 2,
+  "copyGroup": true
+ },
+ "331": {
+  "id": 331,
+  "parent": 325,
+  "rawName": "Spock Drum%g Sustained Buzz Roll",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 805,
+  "copies": 2,
+  "copyGroup": true
+ },
+ "30": {
+  "id": 30,
+  "parent": 30,
+  "rawName": "High Agogo",
+  "staffPos": 0,
+  "gm": 67,
+  "group": 901,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "332": {
+  "id": 332,
+  "parent": 30,
+  "rawName": "High Agogo%g Mute",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 901,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "31": {
+  "id": 31,
+  "parent": 31,
+  "rawName": "Low Agogo",
+  "staffPos": 0,
+  "gm": 68,
+  "group": 901,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "333": {
+  "id": 333,
+  "parent": 31,
+  "rawName": "Low Agogo%g Mute",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 901,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "506": {
+  "id": 506,
+  "parent": 333,
+  "rawName": "Agogo Press Sound",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 901,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "504": {
+  "id": 504,
+  "parent": 30,
+  "rawName": "High Small Agogo",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 901,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "505": {
+  "id": 505,
+  "parent": 31,
+  "rawName": "Low Small Agogo",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 901,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "507": {
+  "id": 507,
+  "parent": 332,
+  "rawName": "Small Agogo Press Sound",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 901,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "334": {
+  "id": 334,
+  "parent": 24,
+  "rawName": "High Bata",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 902,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "335": {
+  "id": 335,
+  "parent": 287,
+  "rawName": "High Bata%g Slap",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 902,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "336": {
+  "id": 336,
+  "parent": 24,
+  "rawName": "High Bata%g Dead Stroke",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 902,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "337": {
+  "id": 337,
+  "parent": 25,
+  "rawName": "Medium Bata",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 902,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "338": {
+  "id": 338,
+  "parent": 295,
+  "rawName": "Medium Bata%g Slap",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 902,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "339": {
+  "id": 339,
+  "parent": 25,
+  "rawName": "Medium Bata%g Dead Stroke",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 902,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "340": {
+  "id": 340,
+  "parent": 27,
+  "rawName": "Low Bata",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 902,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "341": {
+  "id": 341,
+  "parent": 311,
+  "rawName": "Low Bata%g Slap",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 902,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "342": {
+  "id": 342,
+  "parent": 27,
+  "rawName": "Low Bata%g Dead Stroke",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 902,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "343": {
+  "id": 343,
+  "parent": 37,
+  "rawName": "Berimbau",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 903,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "344": {
+  "id": 344,
+  "parent": 36,
+  "rawName": "Berimbau High",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 903,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "345": {
+  "id": 345,
+  "parent": 12,
+  "rawName": "Berimbau Buzz",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 903,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "346": {
+  "id": 346,
+  "parent": 30,
+  "rawName": "High Bongo Bell",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 904,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "347": {
+  "id": 347,
+  "parent": 30,
+  "rawName": "High Bongo Bell Mute",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 904,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "348": {
+  "id": 348,
+  "parent": 31,
+  "rawName": "Low Bongo Bell",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 904,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "349": {
+  "id": 349,
+  "parent": 31,
+  "rawName": "Low Bongo Bell Mute",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 904,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "32": {
+  "id": 32,
+  "parent": 32,
+  "rawName": "High Bongo",
+  "staffPos": 0,
+  "gm": 60,
+  "group": 905,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "350": {
+  "id": 350,
+  "parent": 32,
+  "rawName": "High Bongo%g Mute",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 905,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "351": {
+  "id": 351,
+  "parent": 32,
+  "rawName": "High Bongo%g Slap",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 905,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "503": {
+  "id": 503,
+  "parent": 32,
+  "rawName": "High Bongo High Tone",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 905,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "33": {
+  "id": 33,
+  "parent": 33,
+  "rawName": "Low Bongo",
+  "staffPos": 0,
+  "gm": 61,
+  "group": 905,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "352": {
+  "id": 352,
+  "parent": 33,
+  "rawName": "Low%g Bongo Mute",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 905,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "353": {
+  "id": 353,
+  "parent": 33,
+  "rawName": "Low%g Bongo Slap",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 905,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "354": {
+  "id": 354,
+  "parent": 354,
+  "rawName": "Bowl",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 906,
+  "copies": 5,
+  "copyGroup": false
+ },
+ "34": {
+  "id": 34,
+  "parent": 34,
+  "rawName": "Cabasa",
+  "staffPos": 0,
+  "gm": 69,
+  "group": 907,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "355": {
+  "id": 355,
+  "parent": 34,
+  "rawName": "Cabasa%g Long",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 907,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "356": {
+  "id": 356,
+  "parent": 34,
+  "rawName": "Cabasa%g Multi Shake",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 907,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "357": {
+  "id": 357,
+  "parent": 34,
+  "rawName": "Cabasa%g Shake",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 907,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "358": {
+  "id": 358,
+  "parent": 34,
+  "rawName": "Cabasa%g Snap",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 907,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "359": {
+  "id": 359,
+  "parent": 2,
+  "rawName": "Cajone",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 908,
+  "copies": 3,
+  "copyGroup": false
+ },
+ "500": {
+  "id": 500,
+  "parent": 359,
+  "rawName": "Cajone%g Corner",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 908,
+  "copies": 3,
+  "copyGroup": false
+ },
+ "501": {
+  "id": 501,
+  "parent": 359,
+  "rawName": "Cajone%g Dead Stroke",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 908,
+  "copies": 3,
+  "copyGroup": false
+ },
+ "502": {
+  "id": 502,
+  "parent": 359,
+  "rawName": "Cajone%g Fingertips",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 908,
+  "copies": 3,
+  "copyGroup": false
+ },
+ "360": {
+  "id": 360,
+  "parent": 359,
+  "rawName": "Cajone%g Low",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 908,
+  "copies": 3,
+  "copyGroup": false
+ },
+ "361": {
+  "id": 361,
+  "parent": 359,
+  "rawName": "Cajone%g Slap",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 908,
+  "copies": 3,
+  "copyGroup": false
+ },
+ "362": {
+  "id": 362,
+  "parent": 362,
+  "rawName": "Castanets",
+  "staffPos": 0,
+  "gm": 85,
+  "group": 909,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "363": {
+  "id": 363,
+  "parent": 362,
+  "rawName": "Castanets%g LH",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 909,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "364": {
+  "id": 364,
+  "parent": 362,
+  "rawName": "Castanets%g Flam",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 909,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "365": {
+  "id": 365,
+  "parent": 362,
+  "rawName": "Castanets%g Roll",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 909,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "366": {
+  "id": 366,
+  "parent": 6,
+  "rawName": "Cha Cha Bells",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 910,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "367": {
+  "id": 367,
+  "parent": 48,
+  "rawName": "Cha Cha Bells%g Mute",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 910,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "470": {
+  "id": 470,
+  "parent": 366,
+  "rawName": "Cha Cha Bells%g Tip",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 910,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "35": {
+  "id": 35,
+  "parent": 35,
+  "rawName": "Claves",
+  "staffPos": 0,
+  "gm": 75,
+  "group": 911,
+  "copies": 2,
+  "copyGroup": false
+ },
+ "36": {
+  "id": 36,
+  "parent": 36,
+  "rawName": "Conga",
+  "staffPos": 8,
+  "gm": 63,
+  "group": 912,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "368": {
+  "id": 368,
+  "parent": 36,
+  "rawName": "Conga%g Bass Tone",
+  "staffPos": 8,
+  "gm": -1,
+  "group": 912,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "37": {
+  "id": 37,
+  "parent": 36,
+  "rawName": "Conga%g Dead Stroke",
+  "staffPos": 8,
+  "gm": 62,
+  "group": 912,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "369": {
+  "id": 369,
+  "parent": 36,
+  "rawName": "Conga%g Slap",
+  "staffPos": 8,
+  "gm": -1,
+  "group": 912,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "370": {
+  "id": 370,
+  "parent": 36,
+  "rawName": "Requinto",
+  "staffPos": 11,
+  "gm": -1,
+  "group": 912,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "371": {
+  "id": 371,
+  "parent": 370,
+  "rawName": "Requinto%g Bass Tone",
+  "staffPos": 11,
+  "gm": -1,
+  "group": 912,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "372": {
+  "id": 372,
+  "parent": 370,
+  "rawName": "Requinto%g Dead Stroke",
+  "staffPos": 11,
+  "gm": -1,
+  "group": 912,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "373": {
+  "id": 373,
+  "parent": 370,
+  "rawName": "Requinto%g Slap",
+  "staffPos": 11,
+  "gm": -1,
+  "group": 912,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "374": {
+  "id": 374,
+  "parent": 36,
+  "rawName": "Quinto",
+  "staffPos": 10,
+  "gm": -1,
+  "group": 912,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "375": {
+  "id": 375,
+  "parent": 374,
+  "rawName": "Quinto%g Bass Tone",
+  "staffPos": 10,
+  "gm": -1,
+  "group": 912,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "376": {
+  "id": 376,
+  "parent": 374,
+  "rawName": "Quinto%g Dead Stroke",
+  "staffPos": 10,
+  "gm": -1,
+  "group": 912,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "377": {
+  "id": 377,
+  "parent": 374,
+  "rawName": "Quinto%g Slap",
+  "staffPos": 10,
+  "gm": -1,
+  "group": 912,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "38": {
+  "id": 38,
+  "parent": 38,
+  "rawName": "Tumba",
+  "staffPos": 6,
+  "gm": 64,
+  "group": 912,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "378": {
+  "id": 378,
+  "parent": 38,
+  "rawName": "Tumba%g Bass Tone",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 912,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "379": {
+  "id": 379,
+  "parent": 38,
+  "rawName": "Tumba%g Dead Stroke",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 912,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "380": {
+  "id": 380,
+  "parent": 38,
+  "rawName": "Tumba%g Slap",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 912,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "381": {
+  "id": 381,
+  "parent": 38,
+  "rawName": "Super Tumba",
+  "staffPos": 4,
+  "gm": -1,
+  "group": 912,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "382": {
+  "id": 382,
+  "parent": 382,
+  "rawName": "Super Tumba%g Bass Tone",
+  "staffPos": 4,
+  "gm": -1,
+  "group": 912,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "383": {
+  "id": 383,
+  "parent": 382,
+  "rawName": "Super Tumba%g Dead Stroke",
+  "staffPos": 4,
+  "gm": -1,
+  "group": 912,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "384": {
+  "id": 384,
+  "parent": 382,
+  "rawName": "Super Tumba%g Slap",
+  "staffPos": 4,
+  "gm": -1,
+  "group": 912,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "39": {
+  "id": 39,
+  "parent": 39,
+  "rawName": "Cuica%g High",
+  "staffPos": 0,
+  "gm": 78,
+  "group": 913,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "385": {
+  "id": 385,
+  "parent": 39,
+  "rawName": "Cuica%g Mid",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 913,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "40": {
+  "id": 40,
+  "parent": 39,
+  "rawName": "Cuica%g Low",
+  "staffPos": 0,
+  "gm": 79,
+  "group": 913,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "386": {
+  "id": 386,
+  "parent": 27,
+  "rawName": "Darbuka",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 914,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "387": {
+  "id": 387,
+  "parent": 389,
+  "rawName": "Darbuka%g Dead Stroke",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 914,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "388": {
+  "id": 388,
+  "parent": 311,
+  "rawName": "Darbuka%g Slap",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 914,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "389": {
+  "id": 389,
+  "parent": 27,
+  "rawName": "Djembe",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 915,
+  "copies": 2,
+  "copyGroup": false
+ },
+ "498": {
+  "id": 498,
+  "parent": 389,
+  "rawName": "Djembe%g Bass Tone",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 915,
+  "copies": 2,
+  "copyGroup": false
+ },
+ "390": {
+  "id": 390,
+  "parent": 389,
+  "rawName": "Djembe%g Dead Stroke",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 915,
+  "copies": 2,
+  "copyGroup": false
+ },
+ "499": {
+  "id": 499,
+  "parent": 390,
+  "rawName": "Djembe%g Fingertips",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 915,
+  "copies": 2,
+  "copyGroup": false
+ },
+ "391": {
+  "id": 391,
+  "parent": 311,
+  "rawName": "Djembe%g Slap",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 915,
+  "copies": 2,
+  "copyGroup": false
+ },
+ "392": {
+  "id": 392,
+  "parent": 24,
+  "rawName": "Frame Drum",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 916,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "393": {
+  "id": 393,
+  "parent": 24,
+  "rawName": "Frame Drum%g High",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 916,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "394": {
+  "id": 394,
+  "parent": 25,
+  "rawName": "Frame Drum%g Low",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 916,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "395": {
+  "id": 395,
+  "parent": 26,
+  "rawName": "Frame Drum%g Bass Tone",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 916,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "396": {
+  "id": 396,
+  "parent": 287,
+  "rawName": "Frame Drum%g Slap",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 916,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "397": {
+  "id": 397,
+  "parent": 34,
+  "rawName": "Gourd",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 917,
+  "copies": 2,
+  "copyGroup": false
+ },
+ "41": {
+  "id": 41,
+  "parent": 41,
+  "rawName": "Guiro%g Long",
+  "staffPos": 0,
+  "gm": 74,
+  "group": 918,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "42": {
+  "id": 42,
+  "parent": 41,
+  "rawName": "Guiro%g Short",
+  "staffPos": 0,
+  "gm": 73,
+  "group": 918,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "471": {
+  "id": 471,
+  "parent": 41,
+  "rawName": "Guiro%g Up Long",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 918,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "472": {
+  "id": 472,
+  "parent": 41,
+  "rawName": "Guiro%g Up Short",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 918,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "473": {
+  "id": 473,
+  "parent": 41,
+  "rawName": "Guiro%g Down Up",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 918,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "398": {
+  "id": 398,
+  "parent": 41,
+  "rawName": "Metal Guiro%g Long",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 918,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "399": {
+  "id": 399,
+  "parent": 41,
+  "rawName": "Metal Guiro%g Short",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 918,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "400": {
+  "id": 400,
+  "parent": 41,
+  "rawName": "Plastic Guiro%g Long",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 918,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "401": {
+  "id": 401,
+  "parent": 41,
+  "rawName": "Plastic Guiro%g Short",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 918,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "402": {
+  "id": 402,
+  "parent": 36,
+  "rawName": "Log Drum%g High",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 919,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "403": {
+  "id": 403,
+  "parent": 38,
+  "rawName": "Log Drum%g Low",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 919,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "43": {
+  "id": 43,
+  "parent": 43,
+  "rawName": "Maracas",
+  "staffPos": 0,
+  "gm": 70,
+  "group": 1001,
+  "copies": 2,
+  "copyGroup": false
+ },
+ "404": {
+  "id": 404,
+  "parent": 43,
+  "rawName": "Hi Maraca",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 1001,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "405": {
+  "id": 405,
+  "parent": 43,
+  "rawName": "Low Maraca",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 1001,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "481": {
+  "id": 481,
+  "parent": 7,
+  "rawName": "Pandeiro%g Open",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 1016,
+  "copies": 2,
+  "copyGroup": false
+ },
+ "482": {
+  "id": 482,
+  "parent": 7,
+  "rawName": "Pandeiro%g Open Fingertips",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 1016,
+  "copies": 2,
+  "copyGroup": false
+ },
+ "483": {
+  "id": 483,
+  "parent": 7,
+  "rawName": "Pandeiro%g Open Slap",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 1016,
+  "copies": 2,
+  "copyGroup": false
+ },
+ "484": {
+  "id": 484,
+  "parent": 7,
+  "rawName": "Pandeiro%g Open Thumb",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 1016,
+  "copies": 2,
+  "copyGroup": false
+ },
+ "485": {
+  "id": 485,
+  "parent": 4103,
+  "rawName": "Pandeiro%g Closed",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 1016,
+  "copies": 2,
+  "copyGroup": false
+ },
+ "486": {
+  "id": 486,
+  "parent": 4103,
+  "rawName": "Pandeiro%g Closed Fingertips",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 1016,
+  "copies": 2,
+  "copyGroup": false
+ },
+ "487": {
+  "id": 487,
+  "parent": 4103,
+  "rawName": "Pandeiro%g Closed Slap",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 1016,
+  "copies": 2,
+  "copyGroup": false
+ },
+ "488": {
+  "id": 488,
+  "parent": 4103,
+  "rawName": "Pandeiro%g Closed Thumb",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 1016,
+  "copies": 2,
+  "copyGroup": false
+ },
+ "489": {
+  "id": 489,
+  "parent": 66,
+  "rawName": "Pandeiro%g Jingles",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 1016,
+  "copies": 2,
+  "copyGroup": false
+ },
+ "406": {
+  "id": 406,
+  "parent": 392,
+  "rawName": "Pandero",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 1002,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "407": {
+  "id": 407,
+  "parent": 394,
+  "rawName": "Pandero%g Dead Stroke",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 1002,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "408": {
+  "id": 408,
+  "parent": 396,
+  "rawName": "Pandero%g Slap",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 1002,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "409": {
+  "id": 409,
+  "parent": 43,
+  "rawName": "Rainstick",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 1003,
+  "copies": 2,
+  "copyGroup": false
+ },
+ "476": {
+  "id": 476,
+  "parent": 44,
+  "rawName": "Repinique",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 1015,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "477": {
+  "id": 477,
+  "parent": 468,
+  "rawName": "Repinique%g Fingers",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 1015,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "478": {
+  "id": 478,
+  "parent": 467,
+  "rawName": "Repinique%g Hand",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 1015,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "479": {
+  "id": 479,
+  "parent": 442,
+  "rawName": "Repinique%g Rim",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 1015,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "480": {
+  "id": 480,
+  "parent": 444,
+  "rawName": "Repinique%g Slap",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 1015,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "410": {
+  "id": 410,
+  "parent": 34,
+  "rawName": "Shekere%g High",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 1004,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "411": {
+  "id": 411,
+  "parent": 34,
+  "rawName": "Shekere%g High Shake",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 1004,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "412": {
+  "id": 412,
+  "parent": 34,
+  "rawName": "Shekere%g Low",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 1004,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "413": {
+  "id": 413,
+  "parent": 34,
+  "rawName": "Shekere%g Low Shake",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 1004,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "414": {
+  "id": 414,
+  "parent": 34,
+  "rawName": "Shekere%g Short",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 1004,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "508": {
+  "id": 508,
+  "parent": 34,
+  "rawName": "Shekere%g Bass Tone",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 1004,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "509": {
+  "id": 509,
+  "parent": 34,
+  "rawName": "Shekere%g Down",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 1004,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "510": {
+  "id": 510,
+  "parent": 34,
+  "rawName": "Shekere%g Up",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 1004,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "415": {
+  "id": 415,
+  "parent": 2,
+  "rawName": "Surdu",
+  "staffPos": 0,
+  "gm": 87,
+  "group": 1005,
+  "copies": 3,
+  "copyGroup": false
+ },
+ "416": {
+  "id": 416,
+  "parent": 81,
+  "rawName": "Surdu%g Dead Stroke",
+  "staffPos": 0,
+  "gm": 86,
+  "group": 1005,
+  "copies": 3,
+  "copyGroup": false
+ },
+ "474": {
+  "id": 474,
+  "parent": 81,
+  "rawName": "Surdu%g Dead Stroke (Hand)",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 1005,
+  "copies": 3,
+  "copyGroup": false
+ },
+ "475": {
+  "id": 475,
+  "parent": 78,
+  "rawName": "Surdu%g Rim",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 1005,
+  "copies": 3,
+  "copyGroup": false
+ },
+ "417": {
+  "id": 417,
+  "parent": 36,
+  "rawName": "Tabla",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 1006,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "418": {
+  "id": 418,
+  "parent": 37,
+  "rawName": "Tabla%g High",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 1006,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "419": {
+  "id": 419,
+  "parent": 36,
+  "rawName": "Tabla%g Low",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 1006,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "420": {
+  "id": 420,
+  "parent": 38,
+  "rawName": "Tabla%g Bass Tone",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 1006,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "421": {
+  "id": 421,
+  "parent": 369,
+  "rawName": "Tabla%g Slap",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 1006,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "422": {
+  "id": 422,
+  "parent": 24,
+  "rawName": "Chu",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 1007,
+  "copies": 2,
+  "copyGroup": false
+ },
+ "423": {
+  "id": 423,
+  "parent": 287,
+  "rawName": "Chu%g Ka (Rim)",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 1007,
+  "copies": 2,
+  "copyGroup": false
+ },
+ "424": {
+  "id": 424,
+  "parent": 25,
+  "rawName": "Odaiko",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 1007,
+  "copies": 2,
+  "copyGroup": false
+ },
+ "425": {
+  "id": 425,
+  "parent": 295,
+  "rawName": "Odaiko%g Ka (Rim)",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 1007,
+  "copies": 2,
+  "copyGroup": false
+ },
+ "426": {
+  "id": 426,
+  "parent": 26,
+  "rawName": "Shime",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 1007,
+  "copies": 2,
+  "copyGroup": false
+ },
+ "427": {
+  "id": 427,
+  "parent": 303,
+  "rawName": "Shime%g Ka (Rim)",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 1007,
+  "copies": 2,
+  "copyGroup": false
+ },
+ "428": {
+  "id": 428,
+  "parent": 27,
+  "rawName": "Okedo",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 1007,
+  "copies": 2,
+  "copyGroup": false
+ },
+ "429": {
+  "id": 429,
+  "parent": 311,
+  "rawName": "Okedo%g Ka (Rim)",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 1007,
+  "copies": 2,
+  "copyGroup": false
+ },
+ "430": {
+  "id": 430,
+  "parent": 28,
+  "rawName": "Sumo",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 1007,
+  "copies": 2,
+  "copyGroup": false
+ },
+ "431": {
+  "id": 431,
+  "parent": 311,
+  "rawName": "Sumo%g Ka (Rim)",
+  "staffPos": 6,
+  "gm": -1,
+  "group": 1007,
+  "copies": 2,
+  "copyGroup": false
+ },
+ "432": {
+  "id": 432,
+  "parent": 39,
+  "rawName": "Talking Drum%g High",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 1008,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "433": {
+  "id": 433,
+  "parent": 40,
+  "rawName": "Talking Drum%g Low",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 1008,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "490": {
+  "id": 490,
+  "parent": 44,
+  "rawName": "Tambourim",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 1017,
+  "copies": 2,
+  "copyGroup": false
+ },
+ "491": {
+  "id": 491,
+  "parent": 468,
+  "rawName": "Tambourim%g Dead Stroke",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 1017,
+  "copies": 2,
+  "copyGroup": false
+ },
+ "492": {
+  "id": 492,
+  "parent": 467,
+  "rawName": "Tambourim%g Fingertip",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 1017,
+  "copies": 2,
+  "copyGroup": false
+ },
+ "493": {
+  "id": 493,
+  "parent": 442,
+  "rawName": "Tambourim%g Rim Shot",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 1017,
+  "copies": 2,
+  "copyGroup": false
+ },
+ "494": {
+  "id": 494,
+  "parent": 44,
+  "rawName": "Tambourim%g Virado Down",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 1017,
+  "copies": 2,
+  "copyGroup": false
+ },
+ "495": {
+  "id": 495,
+  "parent": 468,
+  "rawName": "Tambourim%g Virado Down Dead Stroke",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 1017,
+  "copies": 2,
+  "copyGroup": false
+ },
+ "496": {
+  "id": 496,
+  "parent": 44,
+  "rawName": "Tambourim%g Virado Up",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 1017,
+  "copies": 2,
+  "copyGroup": false
+ },
+ "497": {
+  "id": 497,
+  "parent": 468,
+  "rawName": "Tambourim%g Virado Up Dead Stroke",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 1017,
+  "copies": 2,
+  "copyGroup": false
+ },
+ "434": {
+  "id": 434,
+  "parent": 7,
+  "rawName": "Tamburin",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 1009,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "435": {
+  "id": 435,
+  "parent": 7,
+  "rawName": "Tamburin%g High",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 1009,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "436": {
+  "id": 436,
+  "parent": 7,
+  "rawName": "Tamburin%g Low",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 1009,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "437": {
+  "id": 437,
+  "parent": 7,
+  "rawName": "Tamburin%g Bass Tone",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 1009,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "438": {
+  "id": 438,
+  "parent": 7,
+  "rawName": "Tamburin%g Slap",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 1009,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "439": {
+  "id": 439,
+  "parent": 7,
+  "rawName": "Tamburin%g Jingles",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 1009,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "459": {
+  "id": 459,
+  "parent": 11,
+  "rawName": "Temple Block Low",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 1014,
+  "copies": 5,
+  "copyGroup": false
+ },
+ "518": {
+  "id": 518,
+  "parent": 459,
+  "rawName": "Temple Block Low-Mid",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 1014,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "519": {
+  "id": 519,
+  "parent": 459,
+  "rawName": "Temple Block Mid",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 1014,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "520": {
+  "id": 520,
+  "parent": 459,
+  "rawName": "Temple Block High-Mid",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 1014,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "521": {
+  "id": 521,
+  "parent": 459,
+  "rawName": "Temple Block High",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 1014,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "440": {
+  "id": 440,
+  "parent": 36,
+  "rawName": "Thavil%g Left",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 1010,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "441": {
+  "id": 441,
+  "parent": 38,
+  "rawName": "Thavil%g Right",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 1010,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "44": {
+  "id": 44,
+  "parent": 44,
+  "rawName": "High Timbale",
+  "staffPos": 0,
+  "gm": 65,
+  "group": 1011,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "444": {
+  "id": 444,
+  "parent": 44,
+  "rawName": "High Timbale%g Edge",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 1011,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "467": {
+  "id": 467,
+  "parent": 44,
+  "rawName": "High Timbale%g Hand",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 1011,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "468": {
+  "id": 468,
+  "parent": 44,
+  "rawName": "High Timbale%g Mute",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 1011,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "442": {
+  "id": 442,
+  "parent": 44,
+  "rawName": "High Timbale%g Rim",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 1011,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "45": {
+  "id": 45,
+  "parent": 44,
+  "rawName": "Low Timbale",
+  "staffPos": 0,
+  "gm": 66,
+  "group": 1011,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "465": {
+  "id": 465,
+  "parent": 44,
+  "rawName": "Low Timbale%g Edge",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 1011,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "466": {
+  "id": 466,
+  "parent": 45,
+  "rawName": "Low Timbale%g Hand",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 1011,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "469": {
+  "id": 469,
+  "parent": 45,
+  "rawName": "Low Timbale%g Mute",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 1011,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "443": {
+  "id": 443,
+  "parent": 44,
+  "rawName": "Low Timbale%g Rim",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 1011,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "445": {
+  "id": 445,
+  "parent": 30,
+  "rawName": "Timbale%g Bell",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 1011,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "446": {
+  "id": 446,
+  "parent": 30,
+  "rawName": "Timbale%g Bell Mute",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 1011,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "447": {
+  "id": 447,
+  "parent": 37,
+  "rawName": "Udu%g High",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 1012,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "448": {
+  "id": 448,
+  "parent": 36,
+  "rawName": "Udu%g Low",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 1012,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "449": {
+  "id": 449,
+  "parent": 38,
+  "rawName": "Udu%g Bass Tone",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 1012,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "450": {
+  "id": 450,
+  "parent": 37,
+  "rawName": "Udu%g Slap",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 1012,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "46": {
+  "id": 46,
+  "parent": 46,
+  "rawName": "Whistle%g Long",
+  "staffPos": 0,
+  "gm": 72,
+  "group": 1013,
+  "copies": 2,
+  "copyGroup": false
+ },
+ "451": {
+  "id": 451,
+  "parent": 46,
+  "rawName": "Whistle%g Medium",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 1013,
+  "copies": 2,
+  "copyGroup": false
+ },
+ "47": {
+  "id": 47,
+  "parent": 46,
+  "rawName": "Whistle%g Short",
+  "staffPos": 0,
+  "gm": 71,
+  "group": 1013,
+  "copies": 2,
+  "copyGroup": false
+ },
+ "452": {
+  "id": 452,
+  "parent": 7,
+  "rawName": "Body Bells",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 10,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "453": {
+  "id": 453,
+  "parent": 228,
+  "rawName": "Bullroarer",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 10,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "454": {
+  "id": 454,
+  "parent": 22,
+  "rawName": "Clogs",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 10,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "3968": {
+  "id": 3968,
+  "parent": 3968,
+  "rawName": "Custom 1",
+  "staffPos": 0,
+  "gm": 0,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "3969": {
+  "id": 3969,
+  "parent": 3969,
+  "rawName": "Custom 2",
+  "staffPos": 0,
+  "gm": 1,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "3970": {
+  "id": 3970,
+  "parent": 3970,
+  "rawName": "Custom 3",
+  "staffPos": 0,
+  "gm": 2,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "3971": {
+  "id": 3971,
+  "parent": 3971,
+  "rawName": "Custom 4",
+  "staffPos": 0,
+  "gm": 3,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "3972": {
+  "id": 3972,
+  "parent": 3972,
+  "rawName": "Custom 5",
+  "staffPos": 0,
+  "gm": 4,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "3973": {
+  "id": 3973,
+  "parent": 3973,
+  "rawName": "Custom 6",
+  "staffPos": 0,
+  "gm": 5,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "3974": {
+  "id": 3974,
+  "parent": 3974,
+  "rawName": "Custom 7",
+  "staffPos": 0,
+  "gm": 6,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "3975": {
+  "id": 3975,
+  "parent": 3975,
+  "rawName": "Custom 8",
+  "staffPos": 0,
+  "gm": 7,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "3976": {
+  "id": 3976,
+  "parent": 3976,
+  "rawName": "Custom 9",
+  "staffPos": 0,
+  "gm": 8,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "3977": {
+  "id": 3977,
+  "parent": 3977,
+  "rawName": "Custom 10",
+  "staffPos": 0,
+  "gm": 9,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "3978": {
+  "id": 3978,
+  "parent": 3978,
+  "rawName": "Custom 11",
+  "staffPos": 0,
+  "gm": 10,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "3979": {
+  "id": 3979,
+  "parent": 3979,
+  "rawName": "Custom 12",
+  "staffPos": 0,
+  "gm": 11,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "3980": {
+  "id": 3980,
+  "parent": 3980,
+  "rawName": "Custom 13",
+  "staffPos": 0,
+  "gm": 12,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "3981": {
+  "id": 3981,
+  "parent": 3981,
+  "rawName": "Custom 14",
+  "staffPos": 0,
+  "gm": 13,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "3982": {
+  "id": 3982,
+  "parent": 3982,
+  "rawName": "Custom 15",
+  "staffPos": 0,
+  "gm": 14,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "3983": {
+  "id": 3983,
+  "parent": 3983,
+  "rawName": "Custom 16",
+  "staffPos": 0,
+  "gm": 15,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "3984": {
+  "id": 3984,
+  "parent": 3984,
+  "rawName": "Custom 17",
+  "staffPos": 0,
+  "gm": 16,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "3985": {
+  "id": 3985,
+  "parent": 3985,
+  "rawName": "Custom 18",
+  "staffPos": 0,
+  "gm": 17,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "3986": {
+  "id": 3986,
+  "parent": 3986,
+  "rawName": "Custom 19",
+  "staffPos": 0,
+  "gm": 18,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "3987": {
+  "id": 3987,
+  "parent": 3987,
+  "rawName": "Custom 20",
+  "staffPos": 0,
+  "gm": 19,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "3988": {
+  "id": 3988,
+  "parent": 3988,
+  "rawName": "Custom 21",
+  "staffPos": 0,
+  "gm": 20,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "3989": {
+  "id": 3989,
+  "parent": 3989,
+  "rawName": "Custom 22",
+  "staffPos": 0,
+  "gm": 21,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "3990": {
+  "id": 3990,
+  "parent": 3990,
+  "rawName": "Custom 23",
+  "staffPos": 0,
+  "gm": 22,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "3991": {
+  "id": 3991,
+  "parent": 3991,
+  "rawName": "Custom 24",
+  "staffPos": 0,
+  "gm": 23,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "3992": {
+  "id": 3992,
+  "parent": 3992,
+  "rawName": "Custom 25",
+  "staffPos": 0,
+  "gm": 24,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "3993": {
+  "id": 3993,
+  "parent": 3993,
+  "rawName": "Custom 26",
+  "staffPos": 0,
+  "gm": 25,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "3994": {
+  "id": 3994,
+  "parent": 3994,
+  "rawName": "Custom 27",
+  "staffPos": 0,
+  "gm": 26,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "3995": {
+  "id": 3995,
+  "parent": 3995,
+  "rawName": "Custom 28",
+  "staffPos": 0,
+  "gm": 27,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "3996": {
+  "id": 3996,
+  "parent": 76,
+  "rawName": "Custom 29",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "3997": {
+  "id": 3997,
+  "parent": 463,
+  "rawName": "Custom 30",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "3998": {
+  "id": 3998,
+  "parent": 464,
+  "rawName": "Custom 31",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "3999": {
+  "id": 3999,
+  "parent": 256,
+  "rawName": "Custom 32",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "4000": {
+  "id": 4000,
+  "parent": 461,
+  "rawName": "Custom 33",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "4001": {
+  "id": 4001,
+  "parent": 4001,
+  "rawName": "Custom 34",
+  "staffPos": 0,
+  "gm": 33,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "4002": {
+  "id": 4002,
+  "parent": 462,
+  "rawName": "Custom 35",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "4003": {
+  "id": 4003,
+  "parent": 59,
+  "rawName": "Custom 36",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "4004": {
+  "id": 4004,
+  "parent": 74,
+  "rawName": "Custom 37",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "4005": {
+  "id": 4005,
+  "parent": 70,
+  "rawName": "Custom 38",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "4006": {
+  "id": 4006,
+  "parent": 362,
+  "rawName": "Custom 39",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "4007": {
+  "id": 4007,
+  "parent": 416,
+  "rawName": "Custom 40",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "4008": {
+  "id": 4008,
+  "parent": 415,
+  "rawName": "Custom 41",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "4009": {
+  "id": 4009,
+  "parent": 4009,
+  "rawName": "Custom 42",
+  "staffPos": 0,
+  "gm": 88,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "4010": {
+  "id": 4010,
+  "parent": 4010,
+  "rawName": "Custom 43",
+  "staffPos": 0,
+  "gm": 89,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "4011": {
+  "id": 4011,
+  "parent": 4011,
+  "rawName": "Custom 44",
+  "staffPos": 0,
+  "gm": 90,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "4012": {
+  "id": 4012,
+  "parent": 254,
+  "rawName": "Custom 45",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "4013": {
+  "id": 4013,
+  "parent": 4013,
+  "rawName": "Custom 46",
+  "staffPos": 0,
+  "gm": 92,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "4014": {
+  "id": 4014,
+  "parent": 237,
+  "rawName": "Custom 47",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "4015": {
+  "id": 4015,
+  "parent": 4015,
+  "rawName": "Custom 48",
+  "staffPos": 0,
+  "gm": 94,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "4016": {
+  "id": 4016,
+  "parent": 4016,
+  "rawName": "Custom 49",
+  "staffPos": 0,
+  "gm": 95,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "4017": {
+  "id": 4017,
+  "parent": 4017,
+  "rawName": "Custom 50",
+  "staffPos": 0,
+  "gm": 96,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "4018": {
+  "id": 4018,
+  "parent": 4018,
+  "rawName": "Custom 51",
+  "staffPos": 0,
+  "gm": 97,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "4019": {
+  "id": 4019,
+  "parent": 4019,
+  "rawName": "Custom 52",
+  "staffPos": 0,
+  "gm": 98,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "4020": {
+  "id": 4020,
+  "parent": 4020,
+  "rawName": "Custom 53",
+  "staffPos": 0,
+  "gm": 99,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "4021": {
+  "id": 4021,
+  "parent": 4021,
+  "rawName": "Custom 54",
+  "staffPos": 0,
+  "gm": 100,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "4022": {
+  "id": 4022,
+  "parent": 4022,
+  "rawName": "Custom 55",
+  "staffPos": 0,
+  "gm": 101,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "4023": {
+  "id": 4023,
+  "parent": 4023,
+  "rawName": "Custom 56",
+  "staffPos": 0,
+  "gm": 102,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "4024": {
+  "id": 4024,
+  "parent": 4024,
+  "rawName": "Custom 57",
+  "staffPos": 0,
+  "gm": 103,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "4025": {
+  "id": 4025,
+  "parent": 4025,
+  "rawName": "Custom 58",
+  "staffPos": 0,
+  "gm": 104,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "4026": {
+  "id": 4026,
+  "parent": 4026,
+  "rawName": "Custom 59",
+  "staffPos": 0,
+  "gm": 105,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "4027": {
+  "id": 4027,
+  "parent": 4027,
+  "rawName": "Custom 60",
+  "staffPos": 0,
+  "gm": 106,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "4028": {
+  "id": 4028,
+  "parent": 4028,
+  "rawName": "Custom 61",
+  "staffPos": 0,
+  "gm": 107,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "4029": {
+  "id": 4029,
+  "parent": 4029,
+  "rawName": "Custom 62",
+  "staffPos": 0,
+  "gm": 108,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "4030": {
+  "id": 4030,
+  "parent": 4030,
+  "rawName": "Custom 63",
+  "staffPos": 0,
+  "gm": 109,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "4031": {
+  "id": 4031,
+  "parent": 4031,
+  "rawName": "Custom 64",
+  "staffPos": 0,
+  "gm": 110,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "4032": {
+  "id": 4032,
+  "parent": 4032,
+  "rawName": "Custom 65",
+  "staffPos": 0,
+  "gm": 111,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "4033": {
+  "id": 4033,
+  "parent": 4033,
+  "rawName": "Custom 66",
+  "staffPos": 0,
+  "gm": 112,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "4034": {
+  "id": 4034,
+  "parent": 4034,
+  "rawName": "Custom 67",
+  "staffPos": 0,
+  "gm": 113,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "4035": {
+  "id": 4035,
+  "parent": 4035,
+  "rawName": "Custom 68",
+  "staffPos": 0,
+  "gm": 114,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "4036": {
+  "id": 4036,
+  "parent": 4036,
+  "rawName": "Custom 69",
+  "staffPos": 0,
+  "gm": 115,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "4037": {
+  "id": 4037,
+  "parent": 4037,
+  "rawName": "Custom 70",
+  "staffPos": 0,
+  "gm": 116,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "4038": {
+  "id": 4038,
+  "parent": 4038,
+  "rawName": "Custom 71",
+  "staffPos": 0,
+  "gm": 117,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "4039": {
+  "id": 4039,
+  "parent": 4039,
+  "rawName": "Custom 72",
+  "staffPos": 0,
+  "gm": 118,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "4040": {
+  "id": 4040,
+  "parent": 4040,
+  "rawName": "Custom 73",
+  "staffPos": 0,
+  "gm": 119,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "4041": {
+  "id": 4041,
+  "parent": 4041,
+  "rawName": "Custom 74",
+  "staffPos": 0,
+  "gm": 120,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "4042": {
+  "id": 4042,
+  "parent": 4042,
+  "rawName": "Custom 75",
+  "staffPos": 0,
+  "gm": 121,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "4043": {
+  "id": 4043,
+  "parent": 4043,
+  "rawName": "Custom 76",
+  "staffPos": 0,
+  "gm": 122,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "4044": {
+  "id": 4044,
+  "parent": 4044,
+  "rawName": "Custom 77",
+  "staffPos": 0,
+  "gm": 123,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "4045": {
+  "id": 4045,
+  "parent": 4045,
+  "rawName": "Custom 78",
+  "staffPos": 0,
+  "gm": 124,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "4046": {
+  "id": 4046,
+  "parent": 4046,
+  "rawName": "Custom 79",
+  "staffPos": 0,
+  "gm": 125,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "4047": {
+  "id": 4047,
+  "parent": 4047,
+  "rawName": "Custom 80",
+  "staffPos": 0,
+  "gm": 126,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "4048": {
+  "id": 4048,
+  "parent": 4048,
+  "rawName": "Custom 81",
+  "staffPos": 0,
+  "gm": 127,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "4049": {
+  "id": 4049,
+  "parent": 4049,
+  "rawName": "Custom 82",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "4050": {
+  "id": 4050,
+  "parent": 4050,
+  "rawName": "Custom 83",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "4051": {
+  "id": 4051,
+  "parent": 4051,
+  "rawName": "Custom 84",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "4052": {
+  "id": 4052,
+  "parent": 4052,
+  "rawName": "Custom 85",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "4053": {
+  "id": 4053,
+  "parent": 4053,
+  "rawName": "Custom 86",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "4054": {
+  "id": 4054,
+  "parent": 4054,
+  "rawName": "Custom 87",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "4055": {
+  "id": 4055,
+  "parent": 4055,
+  "rawName": "Custom 88",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "4056": {
+  "id": 4056,
+  "parent": 4056,
+  "rawName": "Custom 89",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "4057": {
+  "id": 4057,
+  "parent": 4057,
+  "rawName": "Custom 90",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "4058": {
+  "id": 4058,
+  "parent": 4058,
+  "rawName": "Custom 91",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "4059": {
+  "id": 4059,
+  "parent": 4059,
+  "rawName": "Custom 92",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "4060": {
+  "id": 4060,
+  "parent": 4060,
+  "rawName": "Custom 93",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "4061": {
+  "id": 4061,
+  "parent": 4061,
+  "rawName": "Custom 94",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "4062": {
+  "id": 4062,
+  "parent": 4062,
+  "rawName": "Custom 95",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "4063": {
+  "id": 4063,
+  "parent": 4063,
+  "rawName": "Custom 96",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "4064": {
+  "id": 4064,
+  "parent": 4064,
+  "rawName": "Custom 97",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "4065": {
+  "id": 4065,
+  "parent": 4065,
+  "rawName": "Custom 98",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "4066": {
+  "id": 4066,
+  "parent": 4066,
+  "rawName": "Custom 99",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "4067": {
+  "id": 4067,
+  "parent": 4067,
+  "rawName": "Custom 100",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "4068": {
+  "id": 4068,
+  "parent": 4068,
+  "rawName": "Custom 101",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "4069": {
+  "id": 4069,
+  "parent": 4069,
+  "rawName": "Custom 102",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "4070": {
+  "id": 4070,
+  "parent": 4070,
+  "rawName": "Custom 103",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "4071": {
+  "id": 4071,
+  "parent": 4071,
+  "rawName": "Custom 104",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "4072": {
+  "id": 4072,
+  "parent": 4072,
+  "rawName": "Custom 105",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "4073": {
+  "id": 4073,
+  "parent": 4073,
+  "rawName": "Custom 106",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "4074": {
+  "id": 4074,
+  "parent": 4074,
+  "rawName": "Custom 107",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "4075": {
+  "id": 4075,
+  "parent": 4075,
+  "rawName": "Custom 108",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "4076": {
+  "id": 4076,
+  "parent": 4076,
+  "rawName": "Custom 109",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "4077": {
+  "id": 4077,
+  "parent": 4077,
+  "rawName": "Custom 110",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "4078": {
+  "id": 4078,
+  "parent": 4078,
+  "rawName": "Custom 111",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "4079": {
+  "id": 4079,
+  "parent": 4079,
+  "rawName": "Custom 112",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "4080": {
+  "id": 4080,
+  "parent": 4080,
+  "rawName": "Custom 113",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "4081": {
+  "id": 4081,
+  "parent": 4081,
+  "rawName": "Custom 114",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "4082": {
+  "id": 4082,
+  "parent": 4082,
+  "rawName": "Custom 115",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "4083": {
+  "id": 4083,
+  "parent": 4083,
+  "rawName": "Custom 116",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "4084": {
+  "id": 4084,
+  "parent": 4084,
+  "rawName": "Custom 117",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "4085": {
+  "id": 4085,
+  "parent": 4085,
+  "rawName": "Custom 118",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "4086": {
+  "id": 4086,
+  "parent": 4086,
+  "rawName": "Custom 119",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "4087": {
+  "id": 4087,
+  "parent": 4087,
+  "rawName": "Custom 120",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "4088": {
+  "id": 4088,
+  "parent": 4088,
+  "rawName": "Custom 121",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "4089": {
+  "id": 4089,
+  "parent": 4089,
+  "rawName": "Custom 122",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "4090": {
+  "id": 4090,
+  "parent": 4090,
+  "rawName": "Custom 123",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "4091": {
+  "id": 4091,
+  "parent": 4091,
+  "rawName": "Custom 124",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "4092": {
+  "id": 4092,
+  "parent": 4092,
+  "rawName": "Custom 125",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "4093": {
+  "id": 4093,
+  "parent": 4093,
+  "rawName": "Custom 126",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "4094": {
+  "id": 4094,
+  "parent": 4094,
+  "rawName": "Custom 127",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ },
+ "4095": {
+  "id": 4095,
+  "parent": 4095,
+  "rawName": "Custom 128",
+  "staffPos": 0,
+  "gm": -1,
+  "group": 11,
+  "copies": 1,
+  "copyGroup": false
+ }
+}
