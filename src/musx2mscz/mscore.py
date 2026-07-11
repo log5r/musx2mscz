@@ -35,9 +35,11 @@ def convert(input_path: Path, output_path: Path, style_path: Path | None = None,
     if style_path is not None:
         cmd += ["--style", str(style_path)]
     cmd += ["-o", str(output_path), str(input_path)]
+    env = {k: v for k, v in os.environ.items() if not k.startswith("DYLD_")}
+    env["QT_QPA_PLATFORM"] = os.environ.get("QT_QPA_PLATFORM", "")
     proc = subprocess.run(
         cmd, capture_output=True, text=True, timeout=timeout,
-        env={**os.environ, "QT_QPA_PLATFORM": os.environ.get("QT_QPA_PLATFORM", "")},
+        env=env,
     )
     if proc.returncode != 0 or not output_path.exists():
         noise = ("qt.qml", "Warning:", "QML")

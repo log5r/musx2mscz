@@ -15,10 +15,11 @@ from io import BytesIO
 
 from lxml.etree import Element, SubElement, ElementTree, parse
 
-from . import __version__
+from . import __version__, fonts
 from .enigma import EnigmaDoc
 from .fonts import FontInfo, font_info_from_efx, parse_enigma_text, plain_text
 from .percussion import DrumMapNote, load_drum_maps, staff_drum_map_id
+from .style import FONT_SIZE_FACTOR
 from . import helpers as H
 
 DIVISIONS = 16  # divisions per quarter note
@@ -115,6 +116,7 @@ class Converter:
         self.staff_ctx: dict[str, StaffCtx] = {}
         self.rehearsal_counter = 0
         self.warnings: list[str] = []
+        self.layout_hints: list[tuple[str, float]] = []
         self._seen_system_exprs: set = set()
 
     # ------------------------------------------------------------------ utils
@@ -157,11 +159,12 @@ class Converter:
         elems.extend(self.doc.other_all("staffGroup"))
         for g in elems:
             get = self.doc.get
+            hide_name = self.doc.has(g, "hideName")
             groups.append({
                 "startInst": get(g, "startInst"),
                 "endInst": get(g, "endInst"),
-                "fullName": self.block_text(get(g, "fullID")),
-                "abbrvName": self.block_text(get(g, "abbrvID")),
+                "fullName": None if hide_name else self.block_text(get(g, "fullID")),
+                "abbrvName": None if hide_name else self.block_text(get(g, "abbrvID")),
                 "bracket_id": get(g, "bracket/id") if g.find("bracket/id") is not None else None,
             })
         return groups
@@ -373,7 +376,11 @@ class Converter:
             if doc.has(meas, "txtRepeats"):
                 self._emit_text_repeats(measure, meas_cmper, staff_cmper, system_items)
 
-            self._emit_measure_smart_shapes(measure, meas_cmper, staff_cmper)
+            if piano_staves:
+                for staff_id, pcmper in enumerate(piano_staves, start=1):
+                    self._emit_measure_smart_shapes(measure, meas_cmper, pcmper, staff_id)
+            else:
+                self._emit_measure_smart_shapes(measure, meas_cmper, staff_cmper)
 
             attributes = None
             if idx == 0:
@@ -393,9 +400,17 @@ class Converter:
                                self.staff_ctx[staff_cmper].is_percussion)
                 current_key = key
 
+            use_display_timesig = doc.has(meas, "useDisplayTimesig")
+            if use_display_timesig:
+                disp_beats = get(meas, "dispBeats")
+                disp_divbeat = get(meas, "dispDivbeat")
+                if ((disp_beats is not None and disp_beats != beats)
+                        or (disp_divbeat is not None and disp_divbeat != divbeat)):
+                    self.warn("Display time signature differs from actual; using actual values")
             if beats != current_beats or divbeat != current_divbeat:
                 attributes = self._attr(measure, attributes)
-                self._emit_time(attributes, beats, divbeat, timeSigDoAbrvCommon, timeSigDoAbrvCut)
+                self._emit_time(attributes, beats, divbeat, timeSigDoAbrvCommon,
+                                timeSigDoAbrvCut, use_display_timesig)
                 current_beats, current_divbeat = beats, divbeat
 
             if forRepBar or barEnding:
@@ -421,7 +436,7 @@ class Converter:
                     clef = self._process_gfhold(
                         measure, pcmper, meas_cmper, staff_id, key_for_pitch,
                         transp_key_adjust, transp_interval, current_beats, current_divbeat,
-                        staff_cmper, system_items)
+                        system_items)
                     clefs[staff_id] = clef
                     prev = True
                 if clefs != current_clef:
@@ -435,7 +450,7 @@ class Converter:
                 clef = self._process_gfhold(
                     measure, staff_cmper, meas_cmper, None, key_for_pitch,
                     transp_key_adjust, transp_interval, current_beats, current_divbeat,
-                    staff_cmper, system_items)
+                    system_items)
                 if clef != current_clef:
                     attributes = self._attr(measure, attributes)
                     self._emit_clef(attributes, clef, None)
@@ -481,7 +496,8 @@ class Converter:
             if octave_change:
                 SubElement(transpose, "octave-change").text = str(octave_change)
 
-    def _emit_time(self, attributes, beats, divbeat, abrv_common, abrv_cut):
+    def _emit_time(self, attributes, beats, divbeat, abrv_common, abrv_cut,
+                   suppress_symbol=False):
         time_ = SubElement(attributes, "time")
         b = SubElement(time_, "beats")
         bt = SubElement(time_, "beat-type")
@@ -491,9 +507,9 @@ class Converter:
         elif 4096 % int(divbeat) == 0:
             b.text = beats
             bt.text = str(4096 // int(divbeat))
-            if beats == "4" and divbeat == "1024" and abrv_common:
+            if beats == "4" and divbeat == "1024" and abrv_common and not suppress_symbol:
                 time_.set("symbol", "common")
-            if beats == "2" and divbeat == "2048" and abrv_cut:
+            if beats == "2" and divbeat == "2048" and abrv_cut and not suppress_symbol:
                 time_.set("symbol", "cut")
         else:
             self.warn(f"Unknown divbeat {divbeat}")
@@ -556,7 +572,7 @@ class Converter:
                 d = SubElement(measure, "direction", placement="below")
                 SubElement(SubElement(d, "direction-type"), "words").text = plain_text(text)
 
-    def _emit_measure_smart_shapes(self, measure, meas_cmper, staff_cmper):
+    def _emit_measure_smart_shapes(self, measure, meas_cmper, staff_cmper, staff_id=None):
         doc = self.doc
         for mark in doc.other_list("smartShapeMeasMark", meas_cmper):
             shape_num = doc.get(mark, "shapeNum")
@@ -578,6 +594,10 @@ class Converter:
                 if edu:
                     SubElement(d, "offset").text = str(math.ceil((int(edu) * DIVISIONS) / 1024))
 
+            def _staff(d):
+                if staff_id and staff_id > 1:
+                    SubElement(d, "staff").text = str(staff_id)
+
             if stype in ("cresc", "decresc"):
                 anchor = s_inst if stype == "cresc" else e_inst
                 wedge_type = "crescendo" if stype == "cresc" else "diminuendo"
@@ -585,10 +605,12 @@ class Converter:
                     d = _dir()
                     _offset(d, s_edu)
                     SubElement(SubElement(d, "direction-type"), "wedge", type=wedge_type)
+                    _staff(d)
                 if e_meas == meas_cmper and anchor == staff_cmper:
                     d = _dir()
                     _offset(d, e_edu)
                     SubElement(SubElement(d, "direction-type"), "wedge", type="stop")
+                    _staff(d)
             elif stype in ("octaveUp", "octaveDown", "twoOctaveUp", "twoOctaveDown"):
                 if s_inst != staff_cmper:
                     continue
@@ -598,11 +620,17 @@ class Converter:
                     _offset(d, s_edu)
                     SubElement(SubElement(d, "direction-type"), "octave-shift",
                                type="down" if "Up" in stype else "up", size=size)
+                    _staff(d)
                 if e_meas == meas_cmper:
                     d = _dir("above" if "Up" in stype else "below")
                     _offset(d, e_edu)
                     SubElement(SubElement(d, "direction-type"), "octave-shift",
                                type="stop", size=size)
+                    _staff(d)
+            elif not (doc.has(shape, "entryBased") and stype in (
+                    "slurAuto", "slurUp", "slurDown", "dashSlurAuto", "dashSlurUp",
+                    "dashSlurDown", "trillExt", "trill", "glissando")):
+                self.warn(f"Unhandled smart shape type {stype}")
 
     def _category(self, category_id: str):
         return self.doc.other("markingsCategory", category_id)
@@ -615,6 +643,8 @@ class Converter:
 
     def _emit_expressions(self, measure, meas_cmper, staff_cmper, staff_id, system_items):
         doc = self.doc
+        system_assigns = []
+        staff_assigns = []
         for assign in doc.other_list("measExprAssign", meas_cmper):
             expr_id = doc.get(assign, "textExprID")
             if expr_id is None:
@@ -622,11 +652,20 @@ class Converter:
             expr_def = doc.other("textExprDef", expr_id)
             if expr_def is None:
                 continue
-            staff_assign = doc.get(assign, "staffAssign")
-            horz_edu = doc.get(assign, "horzEduOff")
             category_id = doc.get(expr_def, "categoryID")
             category = self._category(category_id) if category_id else None
             cat_type = doc.get(category, "categoryType") if category is not None else "misc"
+            item = (assign, expr_id, expr_def, category, cat_type)
+            if cat_type in ("tempoMarks", "tempoAlts", "rehearsalMarks"):
+                system_assigns.append(item)
+            else:
+                staff_assigns.append(item)
+        system_assigns.sort(key=lambda item: int(doc.get(item[0], "vertOff", "0") or 0))
+        has_tempo_assign = any(item[4] == "tempoMarks" for item in system_assigns)
+
+        for assign, expr_id, expr_def, category, cat_type in system_assigns + staff_assigns:
+            staff_assign = doc.get(assign, "staffAssign")
+            horz_edu = doc.get(assign, "horzEduOff")
 
             text_key = doc.get(expr_def, "textIDKey")
             tb = doc.other("textBlock", text_key) if text_key else None
@@ -678,7 +717,18 @@ class Converter:
                 dt = SubElement(d, "direction-type")
                 self.rehearsal_counter += 1
                 label = text or self._rehearsal_label(self.rehearsal_counter)
-                SubElement(dt, "rehearsal").text = label
+                if re.fullmatch(r"[A-Z]{1,3}|[0-9]{1,3}", label):
+                    SubElement(dt, "rehearsal").text = label
+                else:
+                    words = SubElement(dt, "words")
+                    words_text = self._runs_display_text(runs)
+                    words.text = words_text
+                    self._apply_font(words, runs, category, cat_type)
+                    vert_off = int(doc.get(assign, "vertOff", "0") or 0)
+                    if (has_tempo_assign and vert_off > 0
+                            and not any(t == words_text for t, _ in self.layout_hints)):
+                        self.layout_hints.append(
+                            (words_text, -(vert_off / 24.0 + 3.0)))
             else:
                 if not text:
                     continue
@@ -708,10 +758,12 @@ class Converter:
                 break
         if font is None:
             return
-        if font.italic:
-            words.set("font-style", "italic")
-        if font.bold:
-            words.set("font-weight", "bold")
+        words.set("font-style", "italic" if font.italic else "normal")
+        words.set("font-weight", "bold" if font.bold else "normal")
+        if font.family and not fonts.is_music_font(font.family):
+            words.set("font-family", font.family)
+        if font.size is not None:
+            words.set("font-size", f"{font.size * FONT_SIZE_FACTOR:.4g}")
 
     # metronome note characters by music font family (default covers Engraver)
     _METRO_CHARS_DEFAULT = {"x": ("16th", False), "e": ("eighth", False),
@@ -890,14 +942,14 @@ class Converter:
 
     def _process_gfhold(self, measure, staff_cmper, meas_cmper, staff_id, key,
                         transp_key_adjust, transp_interval, current_beats, current_divbeat,
-                        expr_staff_cmper, system_items):
+                        system_items):
         doc = self.doc
         gfholds = doc.details_c12.get("gfhold", {}).get((staff_cmper, meas_cmper), [])
         clefID = None
 
         meas = doc.other("measSpec", meas_cmper)
-        if doc.has(meas, "hasExpr") and (staff_id is None or staff_id == 1):
-            self._emit_expressions(measure, meas_cmper, expr_staff_cmper, staff_id, system_items)
+        if doc.has(meas, "hasExpr"):
+            self._emit_expressions(measure, meas_cmper, staff_cmper, staff_id, system_items)
 
         if not gfholds:
             # keep the staff's prevailing clef; fill with a measure rest
@@ -992,6 +1044,13 @@ class Converter:
                     SubElement(orn, "wavy-line", type="start")
                 elif end_entry == entnum:
                     SubElement(orn, "wavy-line", type="stop")
+            elif stype == "glissando":
+                if start_entry == entnum:
+                    SubElement(notations, "glissando", number="1", type="start",
+                               **{"line-type": "wavy"})
+                elif end_entry == entnum:
+                    SubElement(notations, "glissando", number="1", type="stop",
+                               **{"line-type": "wavy"})
 
     def _handle_tuplet_start(self, entry, notations, tuplet_attrs):
         entnum = entry.get("entnum")
@@ -1399,11 +1458,13 @@ class Converter:
                 credit("composer", composer, "right", "bottom", 10)
 
 
-def convert_enigma_to_musicxml(enigmaxml: bytes, metadata: bytes | None) -> tuple[bytes, list[str]]:
+def convert_enigma_to_musicxml(
+        enigmaxml: bytes, metadata: bytes | None
+) -> tuple[bytes, list[str], list[tuple[str, float]]]:
     conv = Converter(enigmaxml, metadata)
     tree = conv.convert()
     out = BytesIO()
     doctype = ('<!DOCTYPE score-partwise PUBLIC "-//Recordare//DTD MusicXML 4.0 Partwise//EN" '
                '"http://www.musicxml.org/dtds/partwise.dtd">')
     tree.write(out, pretty_print=True, encoding="UTF-8", xml_declaration=True, doctype=doctype)
-    return out.getvalue(), conv.warnings
+    return out.getvalue(), conv.warnings, conv.layout_hints

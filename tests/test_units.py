@@ -68,7 +68,8 @@ def test_convert_to_musicxml():
     from musx2mscz.musxfile import MusxFile
     from musx2mscz.converter import convert_enigma_to_musicxml
     musx = MusxFile.load(sorted(SAMPLES.glob("*.musx"))[0])
-    xml, warnings = convert_enigma_to_musicxml(musx.enigmaxml, musx.metadata)
+    xml, warnings, layout_hints = convert_enigma_to_musicxml(
+        musx.enigmaxml, musx.metadata)
     text = xml.decode("utf-8")
     assert "<score-partwise" in text
     assert "<unpitched>" in text  # percussion present in samples

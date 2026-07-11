@@ -12,6 +12,9 @@ import re
 import zipfile
 from pathlib import Path
 
+from lxml import etree
+
+from . import style
 from .enigma import EnigmaDoc
 from .musxfile import MusxFile
 
@@ -54,6 +57,63 @@ def _write_mscz(path: Path, contents: dict[str, bytes]) -> None:
     with zipfile.ZipFile(path, "w", zipfile.ZIP_DEFLATED) as zf:
         for name, blob in contents.items():
             zf.writestr(name, blob)
+
+
+def patch_embedded_style(mscz_path: Path, values: dict[str, str]) -> bool:
+    contents = _read_mscz(mscz_path)
+    mss_name = next((n for n in contents if n.endswith(".mss")), None)
+    if mss_name is None:
+        return False
+    root = etree.fromstring(contents[mss_name])
+    style_el = root.find("Style")
+    changed = False
+    if style_el is None:
+        style_el = etree.SubElement(root, "Style")
+        changed = True
+    for key, value in values.items():
+        el = style_el.find(key)
+        if el is None:
+            el = etree.SubElement(style_el, key)
+            changed = True
+        if el.text != value:
+            el.text = value
+            changed = True
+    if changed:
+        contents[mss_name] = etree.tostring(
+            root, encoding="UTF-8", xml_declaration=True)
+        _write_mscz(mscz_path, contents)
+    return changed
+
+
+def elevate_system_texts(mscz_path: Path, hints) -> bool:
+    contents = _read_mscz(mscz_path)
+    mscx_name = next((n for n in contents if n.endswith(".mscx")), None)
+    if mscx_name is None:
+        return False
+    positions = {}
+    for text, y_sp in hints:
+        positions.setdefault(text, y_sp)
+    root = etree.fromstring(contents[mscx_name])
+    changed = False
+    for tag in ("StaffText", "SystemText"):
+        for el in root.iter(tag):
+            text_el = el.find("text")
+            if text_el is None or el.find("offset") is not None:
+                continue
+            plain = "".join(text_el.itertext()).strip()
+            if plain not in positions:
+                continue
+            autoplace = etree.Element("autoplace")
+            autoplace.text = "0"
+            offset = etree.Element("offset", x="0", y=f"{positions[plain]:.2f}")
+            el.insert(0, offset)
+            el.insert(0, autoplace)
+            changed = True
+    if changed:
+        contents[mscx_name] = etree.tostring(
+            root, encoding="UTF-8", xml_declaration=True)
+        _write_mscz(mscz_path, contents)
+    return changed
 
 
 def _parts_from_mscx(mscx: str) -> list[tuple[str, str]]:
@@ -150,7 +210,6 @@ def add_system_locks(mscz_path: Path, doc: EnigmaDoc) -> bool:
     mscx_name = next((n for n in contents if n.endswith(".mscx")), None)
     if mscx_name is None:
         return False
-    from lxml import etree
     root = etree.fromstring(contents[mscx_name])
     score = root.find("Score")
     if score is None:
@@ -232,7 +291,11 @@ def strip_empty_frames(mscz_path: Path) -> bool:
     return True
 
 
-def postprocess(mscz_path: Path, musx: MusxFile, doc: EnigmaDoc, bind_sounds: bool = True) -> None:
+def postprocess(mscz_path: Path, musx: MusxFile, doc: EnigmaDoc,
+                bind_sounds: bool = True, layout_hints=None) -> None:
+    patch_embedded_style(mscz_path, style.StyleBuilder(doc).build())
+    if layout_hints:
+        elevate_system_texts(mscz_path, layout_hints)
     strip_empty_frames(mscz_path)
     fix_title_frame_alignment(mscz_path)
     if add_system_locks(mscz_path, doc):

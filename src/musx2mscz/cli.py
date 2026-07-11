@@ -21,7 +21,8 @@ def convert_one(input_path: Path, output_path: Path, keep: bool = False,
     print(f"Converting {input_path.name} ...")
     musx = MusxFile.load(input_path)
 
-    musicxml, warnings = convert_enigma_to_musicxml(musx.enigmaxml, musx.metadata)
+    musicxml, warnings, layout_hints = convert_enigma_to_musicxml(
+        musx.enigmaxml, musx.metadata)
     if verbose:
         for w in warnings:
             print(f"  [warn] {w}")
@@ -44,7 +45,8 @@ def convert_one(input_path: Path, output_path: Path, keep: bool = False,
         output_path.parent.mkdir(parents=True, exist_ok=True)
         mscore.convert(xml_path, output_path, style_path=mss_path)
 
-    msczpost.postprocess(output_path, musx, doc, bind_sounds=not no_sound_binding)
+    msczpost.postprocess(output_path, musx, doc, bind_sounds=not no_sound_binding,
+                         layout_hints=layout_hints)
     print(f"  -> {output_path}")
 
 

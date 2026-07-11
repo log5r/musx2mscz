@@ -86,6 +86,7 @@ class StyleBuilder:
         self._music_font()
         self._page_and_spatium()
         self._category_text_styles()
+        self._rehearsal_mark_frame()
         self._misc_fonts()
         self._header_footer()
         return self.values
@@ -186,11 +187,16 @@ class StyleBuilder:
             self.values["dontHideStavesInFirstSystem"] = "1"
 
     def _category_text_styles(self):
-        for cat in self.doc.other_all("markingsCategory"):
-            ctype = self.doc.get(cat, "categoryType")
+        categories = {}
+        for user_created in (False, True):
+            for cat in self.doc.other_all("markingsCategory"):
+                if self.doc.has(cat, "userCreated") != user_created:
+                    continue
+                ctype = self.doc.get(cat, "categoryType")
+                if ctype in _CATEGORY_STYLE and ctype not in categories:
+                    categories[ctype] = cat
+        for ctype, cat in categories.items():
             prefixes = _CATEGORY_STYLE.get(ctype or "")
-            if not prefixes:
-                continue
             font = font_info_from_efx(self.doc, cat.find("textFont"))
             if font.family is None and font.size is None:
                 continue
@@ -200,6 +206,13 @@ class StyleBuilder:
                 if font.size:
                     self.values[f"{prefix}FontSize"] = f"{font.size * FONT_SIZE_FACTOR:.4g}"
                 self.values[f"{prefix}FontStyle"] = str(_font_style_bits(font))
+
+    def _rehearsal_mark_frame(self):
+        enclosed = any(expr.find(".//useEnclosure") is not None
+                       or expr.find(".//enclosure") is not None
+                       for expr in self.doc.other_all("textExprDef"))
+        if not enclosed:
+            self.values["rehearsalMarkFrameType"] = "0"
 
     def _misc_fonts(self):
         # default text (Finale textBlock font) and lyrics
